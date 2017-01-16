@@ -8,90 +8,175 @@ $pokedex_white: #efefef;
 $font: $pokedex_black;
 $background: $pokedex_white;
 // FONTS
-$font-reg: "opensans-regular", sans-serif;
-$font-bold: "opensans-bold";
+$font-reg: 'opensans-regular', sans-serif;
+$font-bold: 'opensans-bold';
 // MAIN
-body {
+body
+{
+    font-family: $font-reg;
     font-size: 100%;
+
     color: $font;
     background: $background;
-    font-family: $font-reg;
 }
 
-.hidden {
+.hidden
+{
     display: none;
 }
 
-.clearfix:after {
-    content: '';
+.clearfix:after
+{
     display: block;
-    width: 0;
-    height: 0;
-    opacity: 0.0;
     visibility: hidden;
     clear: both;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    opacity: .0;
 }
 
-header {
-    h1 {
-        margin: 1em 0 0;
+.hamburger
+{
+    display: block;
+    float: right;
+
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 1px;
+    .top,
+    .mid,
+    .bot
+    {
+        width: 100%;
+        height: 10%;
+        margin-top: 20%;
+
+        background: $pokedex_white;
+    }
+    .bot
+    {
+        margin-bottom: 10%;
+    }
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+
+    color: $pokedex_white;
+    border-bottom: thick solid $pokedex_black;
+    background: $pokedex_red;
+    h1
+    {
+        font-size: 2.2em;
+        line-height: 1rem;
+
         float: left;
-        margin-left: 1em;
+
+        margin: 0;
+        margin-top: .4em;
+        margin-left: .5em;
+
         color: $pokedex_white;
+        .hideForMobile
+        {
+            display: none;
+        }
     }
-
-    .blueball {
-        float: left;
-        width: 4em;
-        height: 4em;
-        border: thick solid $pokedex_black;
-        background: $pokedex_blue;
-        border-radius: 50%;
+    .blueball
+    {
         position: relative;
-    }
 
-    .blueball::after {
-        content: '';
-        width: 50%;
-        height: 50%;
+        float: left;
+
+        width: 2.4em;
+        height: 2.4em;
+
+        border: thick solid $pokedex_black;
         border-radius: 50%;
+        background: $pokedex_blue;
+    }
+    .blueball::after
+    {
         position: absolute;
         top: 15%;
         left: 15%;
-        background: transparentize(#fff, 0.6);
+
+        width: 50%;
+        height: 50%;
+
+        content: '';
+
+        border-radius: 50%;
+        background: transparentize(#fff, .6);
     }
-    background: $pokedex_red;
-    width: 100%;
-    color: $pokedex_white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 1em;
-    box-sizing: border-box;
-    border-bottom: thick solid $pokedex_black;
 
-    #mainNav {
+    #mainNav.closed
+    {
+        display: none;
+        ul
+        {
+            display: none;
+        }
+    }
+    #mainNav
+    {
         font-size: 1.25em;
-        float: right;
-        margin-right: 2em;
-        margin-top: 2em;
 
-        ul {
+        display: block;
+
+        margin-top: 4em;
+        // margin-right: 2em;
+        // margin-top: 2em;
+        ul
+        {
+            clear: both;
+            overflow: hidden;
+
+            width: 100%;
             margin: 0;
             padding: 0;
 
-            li {
-                padding: 0;
-                margin: 0;
-                display: inline-block;
+            list-style: none;
 
-                a:hover {
-                    color: $pokedex_dark_red;
+            border: medium solid $pokedex_black;
+            background: $pokedex_dark_red;
+            -webkit-box-shadow: inset 3px 5px 60px -13px rgba(0,0,0,.43);
+               -moz-box-shadow: inset 3px 5px 60px -13px rgba(0,0,0,.43);
+                    box-shadow: inset 3px 5px 60px -13px rgba(0,0,0,.43);
+
+            li
+            {
+                display: block;
+
+                margin: 0;
+                padding: 0;
+                a:hover
+                {
+                    color: $pokedex_white;
+                    background: transparentize(lighten($pokedex_red, 5),.5);
                 }
 
-                a {
+                a
+                {
+                    display: block;
+
+                    width: 100%;
                     padding: 1em;
+
                     text-decoration: none;
+                    text-transform: uppercase;
+
                     color: inherit;
                 }
             }
@@ -99,11 +184,107 @@ header {
     }
 }
 
-footer{
-  position: fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  padding:1em;
-  font-size: 0.5em;
+main
+{
+    width: 100%;
+    max-width: 60em;
+    min-height: 30em;
+    margin: 0 auto;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+footer
+{
+    font-size: .5em;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: .8em;
+
+    background: $pokedex_grey;
+    .center
+    {
+        display: inline-block;
+
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1em;
+
+        text-align: center;
+    }
+    .left
+    {
+        float: left;
+        clear: left;
+
+        width: 50%;
+
+        text-align: left;
+    }
+    .right
+    {
+        float: right;
+
+        width: 50%;
+
+        text-align: right;
+    }
+    .hide
+    {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:60em)
+{
+    header
+    {
+        h1
+        {
+            .hideForMobile
+            {
+                display: inline;
+            }
+        }
+        .hamburger
+        {
+            display: none;
+        }
+        #mainNav.closed,
+        #mainNav
+        {
+            display: block;
+            float: right;
+
+            margin-top: 0;
+
+            text-align: right;
+            ul
+            {
+                // border:0;
+                display: block;
+
+                box-sizing: border-box;
+                // background-color: transparent;
+                // box-shadow: none;
+                li
+                {
+                    display: inline-block;
+                    a
+                    {
+                        display: inline-block;
+
+                        width: auto;
+                        padding: .5em 1em;
+                    }
+                }
+            }
+        }
+    }
 }

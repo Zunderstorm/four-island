@@ -1,76 +1,164 @@
 body {
+  font-family: "opensans-regular", sans-serif;
   font-size: 100%;
   color: #1d2221;
-  background: #efefef;
-  font-family: "opensans-regular", sans-serif; }
+  background: #efefef; }
 
 .hidden {
   display: none; }
 
 .clearfix:after {
-  content: '';
   display: block;
+  visibility: hidden;
+  clear: both;
   width: 0;
   height: 0;
-  opacity: 0.0;
-  visibility: hidden;
-  clear: both; }
+  content: '';
+  opacity: .0; }
+
+.hamburger {
+  display: block;
+  float: right;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 1px; }
+  .hamburger .top,
+  .hamburger .mid,
+  .hamburger .bot {
+    width: 100%;
+    height: 10%;
+    margin-top: 20%;
+    background: #efefef; }
+  .hamburger .bot {
+    margin-bottom: 10%; }
 
 header {
-  background: #c9092a;
-  width: 100%;
-  color: #efefef;
   position: fixed;
-  left: 0;
   top: 0;
-  padding: 1em;
+  left: 0;
   box-sizing: border-box;
-  border-bottom: thick solid #1d2221; }
+  width: 100%;
+  padding: 1em;
+  color: #efefef;
+  border-bottom: thick solid #1d2221;
+  background: #c9092a; }
   header h1 {
-    margin: 1em 0 0;
+    font-size: 2.2em;
+    line-height: 1rem;
     float: left;
-    margin-left: 1em;
+    margin: 0;
+    margin-top: .4em;
+    margin-left: .5em;
     color: #efefef; }
+    header h1 .hideForMobile {
+      display: none; }
   header .blueball {
+    position: relative;
     float: left;
-    width: 4em;
-    height: 4em;
+    width: 2.4em;
+    height: 2.4em;
     border: thick solid #1d2221;
-    background: #2f99dd;
     border-radius: 50%;
-    position: relative; }
+    background: #2f99dd; }
   header .blueball::after {
-    content: '';
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
     position: absolute;
     top: 15%;
     left: 15%;
+    width: 50%;
+    height: 50%;
+    content: '';
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.4); }
+  header #mainNav.closed {
+    display: none; }
+    header #mainNav.closed ul {
+      display: none; }
   header #mainNav {
     font-size: 1.25em;
-    float: right;
-    margin-right: 2em;
-    margin-top: 2em; }
+    display: block;
+    margin-top: 4em; }
     header #mainNav ul {
+      clear: both;
+      overflow: hidden;
+      width: 100%;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      list-style: none;
+      border: medium solid #1d2221;
+      background: #7b1724;
+      -webkit-box-shadow: inset 3px 5px 60px -13px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: inset 3px 5px 60px -13px rgba(0, 0, 0, 0.43);
+      box-shadow: inset 3px 5px 60px -13px rgba(0, 0, 0, 0.43); }
       header #mainNav ul li {
-        padding: 0;
+        display: block;
         margin: 0;
-        display: inline-block; }
+        padding: 0; }
         header #mainNav ul li a:hover {
-          color: #7b1724; }
+          color: #efefef;
+          background: rgba(225, 10, 47, 0.5); }
         header #mainNav ul li a {
+          display: block;
+          width: 100%;
           padding: 1em;
           text-decoration: none;
+          text-transform: uppercase;
           color: inherit; }
 
+main {
+  width: 100%;
+  max-width: 60em;
+  min-height: 30em;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 2em; }
+
 footer {
-  position: fixed;
+  font-size: .5em;
+  position: absolute;
   bottom: 0;
   left: 0;
+  box-sizing: border-box;
   width: 100%;
-  padding: 1em;
-  font-size: 0.5em; }
+  padding: .8em;
+  background: #cec7c9; }
+  footer .center {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center; }
+  footer .left {
+    float: left;
+    clear: left;
+    width: 50%;
+    text-align: left; }
+  footer .right {
+    float: right;
+    width: 50%;
+    text-align: right; }
+  footer .hide {
+    display: none; }
+
+@media only screen and (min-width: 60em) {
+  header h1 .hideForMobile {
+    display: inline; }
+  header .hamburger {
+    display: none; }
+  header #mainNav.closed,
+  header #mainNav {
+    display: block;
+    float: right;
+    margin-top: 0;
+    text-align: right; }
+    header #mainNav.closed ul,
+    header #mainNav ul {
+      display: block;
+      box-sizing: border-box; }
+      header #mainNav.closed ul li,
+      header #mainNav ul li {
+        display: inline-block; }
+        header #mainNav.closed ul li a,
+        header #mainNav ul li a {
+          display: inline-block;
+          width: auto;
+          padding: .5em 1em; } }
