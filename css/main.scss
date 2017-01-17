@@ -194,6 +194,25 @@ main
       width: 8em;
     }
   }
+  #ivcalc{
+    #stats{
+
+      input, label{
+        width:100%;
+        max-width: 8em;
+        margin-bottom: 1em;
+      }
+      input{
+        border:solid thin $pokedex_black;
+        float:right;
+        clear: right;
+      }
+      label{
+        float:left;
+        clear:left;
+      }
+    }
+  }
     width: 100%;
     max-width: 60em;
     min-height: 30em;

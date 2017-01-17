@@ -116,6 +116,17 @@ main {
     margin: 0 auto;
     height: 8em;
     width: 8em; }
+  main #ivcalc #stats input, main #ivcalc #stats label {
+    width: 100%;
+    max-width: 8em;
+    margin-bottom: 1em; }
+  main #ivcalc #stats input {
+    border: solid thin #1d2221;
+    float: right;
+    clear: right; }
+  main #ivcalc #stats label {
+    float: left;
+    clear: left; }
 
 footer {
   font-size: .5em;
