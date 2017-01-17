@@ -52,6 +52,5 @@ var natVal = nat[stat];
 return iv;
 }
 
-console.log(calcIV(2,100,2,10,100,0));
 
 })();
