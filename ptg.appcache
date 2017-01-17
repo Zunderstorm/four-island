@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 01-17-2017 : v1
+
+CACHE:
+#JAVASCRIPT
+js/main.js
+
+#CSS
+css/main.css
+
+#images
+hi-res-icon.png
+icon.png
+img/sprites/*
