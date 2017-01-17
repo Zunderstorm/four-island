@@ -7,8 +7,11 @@
                                 appCache.swapCache(); // The fetch was successful, swap in the new cache.
                                 if (confirm('An updated version of this web-app is available. Load it now?')) {
                                     window.location.reload();
-                                }
-                            }
-                        }
-                        //from https://www.html5rocks.com/en/tutorials/appcache/beginner/
+                                }//end CONFIRM
+                            }//end IF statement
+                        }//end UPDATEREADY ev listener
+                        ,false);
+                      }//end WINDOW.LOAD ev listener
+                      ,false);
+                        // from https://www.html5rocks.com/en/tutorials/appcache/beginner/
                     })();
