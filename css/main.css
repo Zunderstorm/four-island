@@ -111,6 +111,11 @@ main {
   margin: 0 auto;
   margin-top: 6em;
   margin-bottom: 2em; }
+  main #pokemon-of-the-day img {
+    display: block;
+    margin: 0 auto;
+    height: 8em;
+    width: 8em; }
 
 footer {
   font-size: .5em;
