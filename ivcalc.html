@@ -43,64 +43,86 @@
     <main>
         <form id="ivcalc">
             <section id="pokeinfo" class="clearfix">
-                <label for="pokes">Pok&eacute;mon:</label>
+                <label for="pokemon">Pok&eacute;mon:</label>
                 <!-- <input id="pokemon" type="text" name="pokemon" list="pokes"><br> -->
-                <select name="pokes" id="pokes">
+                <select name="pokemon" id="pokemon">
                 </select>
 
                 <label for="nature">Nature:</label>
                 <!-- <input type="text" name="nature" list="natures"> -->
                 <select name="natures" id="natures">
 
-                  <option value="Hardy">Hardy</option>
-                  <option value="Lonely">Lonely</option>
-                  <option value="Brave">Brave</option>
-                  <option value="Adamant">Adamant</option>
-                  <option value="Naughty">Naughty</option>
+                  <option value="0">Hardy</option>
+                  <option value="1">Lonely</option>
+                  <option value="2">Brave</option>
+                  <option value="3">Adamant</option>
+                  <option value="4">Naughty</option>
 
-                  <option value="Bold">Bold</option>
-                  <option value="Docile">Docile</option>
-                  <option value="Relaxed">Relaxed</option>
-                  <option value="Impish">Impish</option>
-                  <option value="Lax">Lax</option>
+                  <option value="5">Bold</option>
+                  <option value="6">Docile</option>
+                  <option value="7">Relaxed</option>
+                  <option value="8">Impish</option>
+                  <option value="9">Lax</option>
 
-                  <option value="Timid">Timid</option>
-                  <option value="Hasty">Hasty</option>
-                  <option value="Serious">Serious</option>
-                  <option value="Jolly">Jolly</option>
-                  <option value="Naive">Naive</option>
+                  <option value="10">Timid</option>
+                  <option value="11">Hasty</option>
+                  <option value="12">Serious</option>
+                  <option value="13">Jolly</option>
+                  <option value="14">Naive</option>
 
-                  <option value="Modest">Modest</option>
-                  <option value="Mild">Mild</option>
-                  <option value="Quiet">Quiet</option>
-                  <option value="Bashful">Bashful</option>
-                  <option value="Rash">Rash</option>
+                  <option value="15">Modest</option>
+                  <option value="16">Mild</option>
+                  <option value="17">Quiet</option>
+                  <option value="18">Bashful</option>
+                  <option value="19">Rash</option>
 
-                  <option value="Calm">Calm</option>
-                  <option value="Gentle">Gentle</option>
-                  <option value="Sassy">Sassy</option>
-                  <option value="Careful">Careful</option>
-                  <option value="Quirky">Quirky</option>
+                  <option value="20">Calm</option>
+                  <option value="21">Gentle</option>
+                  <option value="22">Sassy</option>
+                  <option value="23">Careful</option>
+                  <option value="24">Quirky</option>
 
 
                 </select>
+                <label for="lvl">Level:</label>
+                <input id="lvl" type="number" min="1" max="100" placeholder="Level" name="lvl"><br>
 
             </section>
             <section id="stats" class="clearfix">
                 <label for="hp">HP</label>
-                <input type="number" name="hpEVs" placeholder="EVs">
-                <input type="number" name="hp" placeholder="HP"><br>
-                <label for="atk">Attack</label>
-                <input type="number" name="atkEVs" placeholder="Evs">
-                <input type="number" name="atk" placeholder="Atk">
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="hpEVs" placeholder="EVs">
+                <input type="number" name="hp" class="stat" id="hp" placeholder="HP">
                 <br>
-                <label for="def">Defense</label><input type="number" name="def" placeholder="Def"><br>
-                <label for="spa">Special Attack</label><input type="number" name="spa" placeholder="SpA"><br>
-                <label for="spd">Special Defense</label><input type="number" name="spd" placeholder="SpD"><br>
-                <label for="spe">Speed</label><input type="number" name="spe" placeholder="Spe"><br>
+                <label for="atk">Attack</label>
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="atkEVs" placeholder="Evs">
+                <input type="number" name="atk" class="stat" id="atk" placeholder="Atk">
+                <br>
+                <label for="def">Defense</label>
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="defEVs" placeholder="Evs">
+                <input type="number" name="def" class="stat" id="def" placeholder="Def">
+                <br>
+                <label for="spa">Special Attack</label>
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="spaEVs" placeholder="Evs">
+                <input type="number" name="spa" class="stat" id="spa" placeholder="SpA">
+                <br>
+                <label for="spd">Special Defense</label>
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="spdEVs" placeholder="Evs">
+                <input type="number" name="spd" class="stat" id="spd" placeholder="SpD">
+                <br>
+                <label for="spe">Speed</label>
+                <input type="checkbox">
+                <input type="number" min="0" max="255" class="ev" name="speEVs" placeholder="Evs">
+                <input type="number" name="spe" class="stat" id="spe" placeholder="Spe">
             </section>
             <input type="submit" value="Calculate">
         </form>
+        <section id="results">
+        </section>
     </main>
     <footer>
         <div class="left">

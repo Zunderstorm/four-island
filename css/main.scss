@@ -206,12 +206,22 @@ main
         float:right;
         clear: right;
       }
+      input[type="radio"],input[type="checkbox"]{
+        float:right;
+        width:1.5em;
+        height:1.5em;
+        display: block;
+        margin:0;
+        padding:0;
+        margin-top:.25em;
+      }
       input[type="number"]{
         clear: none;
         margin-right: 0.5em;
-        max-width: 3em;
+        max-width: 4em;
         text-align: right;
       }
+
       label{
         float:left;
         clear:left;
@@ -219,11 +229,18 @@ main
     }
   }
     width: 100%;
-    max-width: 60em;
+    max-width: 22em;
     min-height: 30em;
     margin: 0 auto;
     margin-top: 6em;
     margin-bottom: 2em;
+}
+
+#results{
+  .ivspread{
+    width: 100%;
+    font-size: 0.5rem;
+  }
 }
 
 footer

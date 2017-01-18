@@ -1,22 +1,6 @@
 (function(){
-  // HP = ((2*Base + IV + EV/4 + 100) * Level) / 100 + 10
-  // IV = ((HP - 10) * 100) / Level - 2*Base - EV/4 - 100
-  // EV = (((HP - 10) * 100) / Level - 2*Base - IV - 100) * 4
-
-
-  // Stat = (((2*Base + IV + EV/4) * Level) / 100 + 5) * Nature
-  // IV = ((Stat/Nature - 5) * 100) / Level - 2*Base - EV/4
-  // EV = (((Stat/Nature - 5) * 100) / Level - 2*Base - IV) * 4
-
-  //IF nature is +ve, 1.10, if -ve, 0.9, if neutral, 1.0
-
-var hp = 0;
-var atk = 1;
-var def = 2;
-var spa = 3;
-var spd = 4;
-var spe = 5;
-
+var results = document.querySelector('#results');
+var ivcalc = document.querySelector("#ivcalc");
 var natures = [
   [1,1,1,1,1,1],//hardy - 0
   [1,1.1,0.9,1,1,1],//lonely - 1
@@ -49,7 +33,7 @@ var natures = [
 // IV = ((Stat/Nature - 5) * 100) / Level - 2*Base - EV/4
 // iv = ((statVal/mod - 5)*100)/level - 2*base - ev/4;
 
-function calcIVs(mon,stats,level, EVs,nature){
+function calcIVs(mon, stats, level, EVs, nature){
   console.log(mon + "\n stats:" + stats + "\n level: " + level + "\n EVs: " + EVs + "\n Nature: " + nature);
   var IVs = [];
   // var IVmin = [];
@@ -83,9 +67,9 @@ function calcIVs(mon,stats,level, EVs,nature){
 
   // console.log(bases);
   // return [IVmin,"______",IVmax];
-  for(var i=0;i<6;i++){
-    console.log(s[i] + " " + IVs[i]+"\n");
-  }
+  // for(var i=0;i<6;i++){
+  //   console.log(s[i] + " " + IVs[i]+"\n");
+  // }
   return IVs;
 }
 
@@ -93,10 +77,7 @@ console.log("IVS: 10, 31,31,31,31,0");
 calcIVs("bulbasaur",[20,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
 
 
-var pokeslist = document.querySelector('#pokes');
-
-// console.log(pokedex);
-
+var pokeslist = document.querySelector('#pokemon');
 var temptemp =0;
     for (var key in pokedex){
         var newPoke = document.createElement('option');
@@ -105,4 +86,41 @@ var temptemp =0;
             pokeslist.appendChild(newPoke);
     }
 
+
+function displayIVs(event){
+  event.preventDefault();
+  var stats = [];
+  var EVs = [];
+
+  var mon = ivcalc.querySelector('#pokemon').value;
+
+  var statfields = ivcalc.querySelectorAll('.stat');
+  for(var i=0;i<statfields.length;i++){
+    stats[i] = parseInt(statfields[i].value);
+  }
+
+  var level = ivcalc.querySelector('#lvl').value;
+
+  var evfields = ivcalc.querySelectorAll('.ev');
+  evfields = Array.prototype.slice.call(evfields);
+  for(var i=0;i<evfields.length;i++){
+    if(evfields[i].value===NaN || evfields[i].value===null || evfields[i].value===""){
+      EVs[i]=0;
+      // console.log("set = 0");
+    }else{
+      // console.log("set=num");
+      EVs[i] = parseInt(evfields[i].value);
+    }
+  }
+  console.log(EVs);
+
+  var nature = ivcalc.querySelector('#natures').value;
+  var ivspread = calcIVs(mon, stats, level, EVs, nature);
+  results.innerHTML = "";
+  for(var i=0;i<ivspread.length;i++){
+    results.innerHTML+="<p class='ivspread'>"+ ivspread[i]+";</p>"
+  }
+}
+
+ivcalc.addEventListener('submit',displayIVs,false);
 })();
