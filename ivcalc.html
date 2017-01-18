@@ -2,57 +2,111 @@
 <html>
 <!-- <html manifest="ptg.appcache"> -->
 <!--UPDATE ptg.appcache to force cache updates!-->
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-<title>Pokemon Training Tool</title>
-<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-<link rel="icon" sizes="192x192" href="hi-res-icon.png"><!--FOR ANDROID-->
-<link rel="apple-touch-icon" sizes="128x128" href="icon.png"><!--FOR IPHONE-->
-<link rel="apple-touch-icon-precomposed" sizes="128x128" href="icon.png"><!--FOR IPHONE-->
-<meta name="apple-mobile-web-app-capable" content="yes"><!--FOR IPHONE-->
-<meta name="mobile-web-app-capable" content="yes"><!--FOR ANDROID-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Pokemon Training Tool</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="icon" sizes="192x192" href="hi-res-icon.png">
+    <!--FOR ANDROID-->
+    <link rel="apple-touch-icon" sizes="128x128" href="icon.png">
+    <!--FOR IPHONE-->
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icon.png">
+    <!--FOR IPHONE-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--FOR IPHONE-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--FOR ANDROID-->
 </head>
+
 <body>
-<header>
-  <div class="blueball"></div>
-  <h1>P<span class="hideForMobile">OK&eacute;MON </span>T<span class="hideForMobile">RAINING </span>T<span class="hideForMobile">OOL</span> </h1>
-  <a href="#" class="hamburger"><div class="top"></div><div class="mid"></div><div class="bot"></div></a>
-  <nav id="mainNav" class="closed">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Teams</a></li>
-      <li><a href="#" class="current">IV Calculator</a></li>
-      <li><a href="#">Breeding</a></li>
-      <li><a href="#">EV Training</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-<form id="ivcalc">
-  <section id="stats">
-  <label for="hp">HP</label><input type="number" name="hp"><br>
-  <label for="atk">Attack</label><input type="number" name="atk"><br>
-  <label for="def">Defense</label><input type="number" name="def"><br>
-  <label for="spa">Special Attack</label><input type="number" name="spa"><br>
-  <label for="spd">Special Defense</label><input type="number" name="spd"><br>
-  <label for="spe">Speed</label><input type="number" name="spe"><br>
-</section>
-</form>
-</main>
-<footer>
-  <div class="left">
-    View on <a href="http://github.com/irelandnick/pokemon-training-tool" target="_blank">Github</a>.
-  </div>
-  <div class="right"><a id="copyToggle" href="#">&copy; Information</a></div>
-  <div class="center hide">
-    Tool &copy; Nicholas Ireland 2017.<br>
-    Pokémon And All Respective Names are Trademark &amp; &copy; Nintendo 1996-2017.<br>
-    This is a fan site. No affiliation or copyright infringement are intended with Nintendo, Pok&eacute;mon, or Gamefreak, or any further license holders of the Pok&eacute;mon Brand.
-  </div>
-</footer>
-<script src="js/main.js"></script>
-<script src="js/iv.js"></script>
-<script src="js/caching.js"></script>
+    <header>
+        <div class="blueball"></div>
+        <h1>P<span class="hideForMobile">OK&eacute;MON </span>T<span class="hideForMobile">RAINING </span>T<span class="hideForMobile">OOL</span> </h1>
+        <a href="#" class="hamburger">
+            <div class="top"></div>
+            <div class="mid"></div>
+            <div class="bot"></div>
+        </a>
+        <nav id="mainNav" class="closed">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="ivcalc.html" class="current">IV Calculator</a></li>
+                <li><a href="#">Breeding</a></li>
+                <li><a href="#">EV Training</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="ivcalc">
+            <section id="pokeinfo" class="clearfix">
+                <label for="pokemon">Pok&eacute;mon:</label><input id="pokemon" type="text" name="pokemon" list="pokes"><br>
+                <datalist name="pokes" id="pokes">
+                </datalist>
+                <label for="nature">Nature:</label>
+                <input type="text" name="nature" list="natures">
+                <datalist name="natures" id="natures">
+
+                  <option value="Hardy">Hardy</option>
+                  <option value="Lonely">Lonely</option>
+                  <option value="Brave">Brave</option>
+                  <option value="Adamant">Adamant</option>
+                  <option value="Naughty">Naughty</option>
+
+                  <option value="Bold">Bold</option>
+                  <option value="Docile">Docile</option>
+                  <option value="Relaxed">Relaxed</option>
+                  <option value="Impish">Impish</option>
+                  <option value="Lax">Lax</option>
+
+                  <option value="Timid">Timid</option>
+                  <option value="Hasty">Hasty</option>
+                  <option value="Serious">Serious</option>
+                  <option value="Jolly">Jolly</option>
+                  <option value="Naive">Naive</option>
+
+                  <option value="Modest">Modest</option>
+                  <option value="Mild">Mild</option>
+                  <option value="Quiet">Quiet</option>
+                  <option value="Basful">Bashful</option>
+                  <option value="Rash">Rash</option>
+
+                  <option value="Calm">Calm</option>
+                  <option value="Gentle">Gentle</option>
+                  <option value="Sassy">Sassy</option>
+                  <option value="Careful">Careful</option>
+                  <option value="Quirky">Quirky</option>
+
+
+                </datalist>
+
+            </section>
+            <section id="stats" class="clearfix">
+                <label for="hp">HP</label><input type="number" name="hp"><br>
+                <label for="atk">Attack</label><input type="number" name="atk"><br>
+                <label for="def">Defense</label><input type="number" name="def"><br>
+                <label for="spa">Special Attack</label><input type="number" name="spa"><br>
+                <label for="spd">Special Defense</label><input type="number" name="spd"><br>
+                <label for="spe">Speed</label><input type="number" name="spe"><br>
+            </section>
+            <input type="submit" value="Calculate">
+        </form>
+    </main>
+    <footer>
+        <div class="left">
+            View on <a href="http://github.com/irelandnick/pokemon-training-tool" target="_blank">Github</a>.
+        </div>
+        <div class="right"><a id="copyToggle" href="#">&copy; Information</a></div>
+        <div class="center hide">
+            Tool &copy; Nicholas Ireland 2017.<br> Pokémon And All Respective Names are Trademark &amp; &copy; Nintendo 1996-2017.<br> This is a fan site. No affiliation or copyright infringement are intended with Nintendo, Pok&eacute;mon, or Gamefreak,
+            or any further license holders of the Pok&eacute;mon Brand.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/iv.js"></script>
+    <!-- <script src="js/caching.js"></script> -->
 </body>
+
 </html>

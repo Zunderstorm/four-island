@@ -44,11 +44,12 @@ header {
   border-bottom: thick solid #1d2221;
   background: #c9092a; }
   header h1 {
-    font-size: 2em;
+    font-size: 1.6em;
+    text-transform: uppercase;
     line-height: 1rem;
     float: left;
     margin: 0;
-    margin-top: .5em;
+    margin-top: 0.75em;
     margin-left: .5em;
     color: #efefef; }
     header h1 .hideForMobile {
@@ -117,15 +118,15 @@ main {
     margin: 0 auto;
     height: 8em;
     width: 8em; }
-  main #ivcalc #stats input, main #ivcalc #stats label {
+  main #ivcalc #stats input, main #ivcalc #stats label, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo label, main #ivcalc #pokeinfo select {
     width: 100%;
     max-width: 8em;
     margin-bottom: 1em; }
-  main #ivcalc #stats input {
+  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select {
     border: solid thin #1d2221;
     float: right;
     clear: right; }
-  main #ivcalc #stats label {
+  main #ivcalc #stats label, main #ivcalc #pokeinfo label {
     float: left;
     clear: left; }
 

@@ -77,13 +77,12 @@ header
     background: $pokedex_red;
     h1
     {
-        font-size: 2em;
-        line-height: 1rem;
+        font-size: 1.6em;        text-transform: uppercase;        line-height: 1rem;
 
         float: left;
 
         margin: 0;
-        margin-top: .5em;
+        margin-top: 0.75em;
         margin-left: .5em;
 
         color: $pokedex_white;
@@ -194,14 +193,14 @@ main
     }
   }
   #ivcalc{
-    #stats{
+    #stats, #pokeinfo{
 
-      input, label{
+      input, label,select{
         width:100%;
         max-width: 8em;
         margin-bottom: 1em;
       }
-      input{
+      input,select{
         border:solid thin $pokedex_black;
         float:right;
         clear: right;

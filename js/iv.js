@@ -56,5 +56,23 @@ return iv;
 // (200/1.1 - 5)*100/23 - 2*100
 console.log(calcIV(1,200,2,23,100,0));
 
+var pokeslist = document.querySelector('#pokes');
+// for(var i=1;i<pokemonicals.length;i++){
+//   var newPoke = document.createElement('option');
+//   newPoke.value = pokemonicals[i];
+//   newPoke.innerHTML = pokemonicals[i];
+//   pokeslist.appendChild(newPoke);
+// }
+
+function reqListener(e) {
+    p = JSON.parse(this.responseText);
+    console.log(p);
+}
+var p;
+var oReq = new XMLHttpRequest();
+oReq.onload = reqListener;
+oReq.open("get", "js/json/pokemon.json", true);
+oReq.send();
+
 
 })();
