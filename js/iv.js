@@ -45,34 +45,36 @@ var natures = [
   [1,1,1,1,1,1]//quirky - 24
 ];
 
-function calcIV(stat,statVal,nature,level,base,ev){
-var iv = null;
-var mod = natures[nature][stat];
+// var mod = natures[nature][stat];
 // IV = ((Stat/Nature - 5) * 100) / Level - 2*Base - EV/4
-iv = ((statVal/mod - 5)*100)/level - 2*base - ev/4;
-return iv;
+// iv = ((statVal/mod - 5)*100)/level - 2*base - ev/4;
+
+function calcIVs(mon,stats,level, EVs,nature){
+  var IVs = [];
+  var s = ["hp","atk","def","spa","spd","spe"];
+  var bases = pokedex[mon].baseStats;
+  for(var i=0;i<6;i++){
+    console.log(IVs[i]);
+    // console.log(stats[i]);
+    // console.log(natures[nature][i]);
+    // console.log(level);
+    IVs[i] = ((stats[i]/natures[nature][i])*100)/level - 2*bases[s[i]] - (EVs[i]/4);
+  }
+  console.log(bases);
+  return IVs;
 }
 
-// (200/1.1 - 5)*100/23 - 2*100
-console.log(calcIV(1,200,2,23,100,0));
+console.log(
+  calcIVs("bulbasaur",[21,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
+);
 
 var pokeslist = document.querySelector('#pokes');
-// for(var i=1;i<pokemonicals.length;i++){
-//   var newPoke = document.createElement('option');
-//   newPoke.value = pokemonicals[i];
-//   newPoke.innerHTML = pokemonicals[i];
-//   pokeslist.appendChild(newPoke);
-// }
 
-function reqListener(e) {
-    p = JSON.parse(this.responseText);
-    console.log(p);
-}
-var p;
-var oReq = new XMLHttpRequest();
-oReq.onload = reqListener;
-oReq.open("get", "js/json/pokemon.json", true);
-oReq.send();
+// console.log(pokedex);
 
-
+  // for(var i=1;i<3;i++){
+  //     var newPoke = document.createElement('option');
+  //     newPoke.value = pokedex["bulbasaur"].species;
+  //     pokeslist.appendChild(newPoke);
+  //   }
 })();

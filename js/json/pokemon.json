@@ -95,7 +95,7 @@
   "028":{
     "name":"Sandslash"
   },
-  "028,5":{
+  "028.5":{
     "name":"Alolan Sandslash"
   },
   "029":{
@@ -142,5 +142,221 @@
   },
   "041":{
     "name":"Zubat"
+  },
+  "042":{
+    "name": "Golbat"
+  },
+  "043": {
+    "name": "Oddish"
+  },
+  "044": {
+    "name": "Gloom"
+  },
+  "045": {
+    "name": "Vileplume"
+  },
+  "046": {
+    "name": "Paras"
+  },
+  "047": {
+    "name": "Parasect"
+  },
+  "048": {
+    "name": "Venonat"
+  },
+  "049": {
+    "name": "Venomoth"
+  },
+  "050": {
+    "name": "Diglett"
+  },
+  "050.5": {
+    "name": "Alolan Diglett"
+  },
+  "051": {
+    "name": "Dugtrio"
+  },
+  "051.5": {
+    "name": "Alolan Dugtrio"
+  },
+  "052": {
+    "name": "Meowth"
+  },
+  "052.5": {
+    "name": "Alolan Meowth"
+  },
+  "053": {
+    "name": "Persian"
+  },
+  "053.5": {
+    "name": "Alolan Persian"
+  },
+  "054": {
+    "name": "Psyduck"
+  },
+  "055": {
+    "name": "Golduck"
+  },
+  "056": {
+    "name": "Mankey"
+  },
+  "057": {
+    "name": "Primape"
+  },
+  "058": {
+    "name": "Growlithe"
+  },
+  "059": {
+    "name": "Arcanine"
+  },
+  "060": {
+    "name": "Poliwag"
+  },
+  "061": {
+    "name": "Poliwhirl"
+  },
+  "062": {
+    "name": "Poliwrath"
+  },
+  "063": {
+    "name": "Abra"
+  },
+  "064": {
+    "name": "Kadabra"
+  },
+  "065": {
+    "name": "Alakazam"
+  },
+  "066": {
+    "name": "Machop"
+  },
+  "067": {
+    "name": "Machoke"
+  },
+  "068": {
+    "name": "Machamp"
+  },
+    "069": {
+      "name": "Bellsprout"
+    },
+    "070": {
+      "name": "Weepinbell"
+    },
+    "071": {
+      "name": "Victreebel"
+    },
+    "072": {
+      "name": "Tentacool"
+    },
+    "073": {
+      "name": "Tentacruel"
+    },
+    "074": {
+      "name": "Geodude"
+    },
+    "074.5": {
+      "name": "Alolan Geodude"
+    },
+    "075": {
+      "name": "Graveler"
+    },
+    "075.5": {
+      "name": "Alolan Graveler"
+    },
+    "076": {
+      "name": "Golem"
+    },
+    "076.5": {
+      "name": "Alolan Golem"
+    },
+    "077": {
+      "name": "Ponyta"
+    },
+    "078": {
+      "name": "Rapidash"
+    },
+    "079": {
+      "name": "Slowpoke"
+    },
+    "080": {
+      "name": "Slowbro"
+    },
+    "081": {
+      "name": "Magnemite"
+    },
+    "082": {
+      "name": "Magneton"
+    },
+    "083": {
+      "name": "Farfetch'd"
+    },
+    "084": {
+      "name": "Doduo"
+    },
+    "085": {
+      "name": "Dodrio"
+    },
+    "086": {
+      "name": "Seel"
+    },
+    "087": {
+      "name": "Dewgong"
+    },
+    "088": {
+      "name": "Grimer"
+    },
+    "088.5": {
+      "name": "Alolan Grimer"
+    },
+    "089": {
+      "name": "Muk"
+    },
+    "089.5": {
+      "name": "Alolan Muk"
+    },
+    "090": {
+      "name": "Shellder"
+    },
+    "091": {
+      "name": "Cloyster"
+    },
+    "092": {
+      "name": "Gastly"
+    },
+    "093": {
+      "name": "Haunter"
+    },
+    "094": {
+      "name": "Gengar"
+    },
+    "095": {
+      "name": "Onix"
+    },
+    "096": {
+      "name": "Drowzee"
+    },
+    "097": {
+      "name": "Hypno"
+    },
+    "098": {
+      "name": "Krabby"
+    },
+    "099": {
+      "name": "Kingler"
+    },
+    "100": {
+      "name": "Voltorb"
+    },
+    "101": {
+      "name": "Electrode"
+    },
+    "102": {
+      "name": "Execute"
+    },
+    "103": {
+      "name": "Exeggutor"
+    },
+    "103.5": {
+      "name": "Alolan Exeggutor"
+    }
   }
-}

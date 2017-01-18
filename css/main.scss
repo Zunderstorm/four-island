@@ -199,8 +199,9 @@ main
         width:100%;
         max-width: 8em;
         margin-bottom: 1em;
+        padding:0.4em;
       }
-      input,select{
+      input,select,input[type="submit"]{
         border:solid thin $pokedex_black;
         float:right;
         clear: right;

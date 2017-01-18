@@ -1,6 +1,7 @@
 (function() {
-    var copy = document.querySelector("#copyToggle"); //for copyright info toggle
-    var hamburger = document.querySelector(".hamburger");
+  
+  var copy = document.querySelector("#copyToggle"); //for copyright info toggle
+  var hamburger = document.querySelector(".hamburger");
 
     function toggleCopy(event) {
         event.preventDefault();

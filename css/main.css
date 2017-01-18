@@ -121,8 +121,9 @@ main {
   main #ivcalc #stats input, main #ivcalc #stats label, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo label, main #ivcalc #pokeinfo select {
     width: 100%;
     max-width: 8em;
-    margin-bottom: 1em; }
-  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select {
+    margin-bottom: 1em;
+    padding: 0.4em; }
+  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #stats input[type="submit"], main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select, main #ivcalc #pokeinfo input[type="submit"] {
     border: solid thin #1d2221;
     float: right;
     clear: right; }
