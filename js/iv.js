@@ -74,7 +74,7 @@ function calcIVs(mon, stats, level, EVs, nature){
 }
 
 console.log("IVS: 10, 31,31,31,31,0");
-calcIVs("bulbasaur",[20,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
+// calcIVs("bulbasaur",[20,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
 
 
 var pokeslist = document.querySelector('#pokemon');
@@ -89,6 +89,7 @@ var temptemp =0;
 
 function displayIVs(event){
   event.preventDefault();
+  var invalid=false;
   var stats = [];
   var EVs = [];
 
@@ -113,12 +114,19 @@ function displayIVs(event){
     }
   }
   console.log(EVs);
+  if(mon===""||level===""||stats[0]===""){
+    invalid=true;
+  }
 
   var nature = ivcalc.querySelector('#natures').value;
-  var ivspread = calcIVs(mon, stats, level, EVs, nature);
-  results.innerHTML = "";
-  for(var i=0;i<ivspread.length;i++){
-    results.innerHTML+="<p class='ivspread'>"+ ivspread[i]+";</p>"
+  if(!invalid){
+    var ivspread = calcIVs(mon, stats, level, EVs, nature);
+    results.innerHTML = "";
+    for(var i=0;i<ivspread.length;i++){
+      results.innerHTML+="<p class='ivspread'>"+ ivspread[i]+";</p>"
+    }
+  }else{
+    alert("Invalid Input! Please try again.")
   }
 }
 

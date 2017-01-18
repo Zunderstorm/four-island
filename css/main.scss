@@ -193,6 +193,19 @@ main
     }
   }
   #ivcalc{
+    input[type="submit"]{
+      display: block;
+      border:solid medium $pokedex_black;
+      width:95%;
+      background:$pokedex_dark_red;
+      color:$pokedex_white;
+      max-width: 16em;
+      text-transform: uppercase;
+      margin:0 auto;
+      clear: right;
+      box-sizing: border-box;
+      padding:1em;
+    }
     #stats, #pokeinfo{
 
       input, label,select{
@@ -201,11 +214,12 @@ main
         margin-bottom: 1em;
         padding:0.4em;
       }
-      input,select,input[type="submit"]{
+      input,select{
         border:solid thin $pokedex_black;
         float:right;
         clear: right;
       }
+
       input[type="radio"],input[type="checkbox"]{
         float:right;
         width:1.5em;
@@ -219,7 +233,6 @@ main
         clear: none;
         margin-right: 0.5em;
         max-width: 4em;
-        text-align: right;
       }
 
       label{

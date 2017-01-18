@@ -118,12 +118,24 @@ main {
     margin: 0 auto;
     height: 8em;
     width: 8em; }
+  main #ivcalc input[type="submit"] {
+    display: block;
+    border: solid medium #1d2221;
+    width: 95%;
+    background: #7b1724;
+    color: #efefef;
+    max-width: 16em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    clear: right;
+    box-sizing: border-box;
+    padding: 1em; }
   main #ivcalc #stats input, main #ivcalc #stats label, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo label, main #ivcalc #pokeinfo select {
     width: 100%;
     max-width: 8em;
     margin-bottom: 1em;
     padding: 0.4em; }
-  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #stats input[type="submit"], main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select, main #ivcalc #pokeinfo input[type="submit"] {
+  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select {
     border: solid thin #1d2221;
     float: right;
     clear: right; }
@@ -138,8 +150,7 @@ main {
   main #ivcalc #stats input[type="number"], main #ivcalc #pokeinfo input[type="number"] {
     clear: none;
     margin-right: 0.5em;
-    max-width: 4em;
-    text-align: right; }
+    max-width: 4em; }
   main #ivcalc #stats label, main #ivcalc #pokeinfo label {
     float: left;
     clear: left; }
