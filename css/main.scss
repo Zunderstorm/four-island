@@ -43,7 +43,7 @@ body
 {
     display: block;
     float: right;
-
+    margin-top:0.25em;
     width: 2.3rem;
     height: 2.3rem;
     padding: 1px;
@@ -54,7 +54,6 @@ body
         width: 100%;
         height: 10%;
         margin-top: 20%;
-
         background: $pokedex_white;
     }
     .bot
@@ -78,13 +77,13 @@ header
     background: $pokedex_red;
     h1
     {
-        font-size: 2.2em;
+        font-size: 2em;
         line-height: 1rem;
 
         float: left;
 
         margin: 0;
-        margin-top: .4em;
+        margin-top: .5em;
         margin-left: .5em;
 
         color: $pokedex_white;
@@ -161,7 +160,7 @@ header
 
                 margin: 0;
                 padding: 0;
-                a:hover
+                a:hover,a.current
                 {
                     color: $pokedex_white;
                     background: transparentize(lighten($pokedex_red, 5),.5);

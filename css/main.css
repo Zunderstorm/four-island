@@ -19,6 +19,7 @@ body {
 .hamburger {
   display: block;
   float: right;
+  margin-top: 0.25em;
   width: 2.3rem;
   height: 2.3rem;
   padding: 1px; }
@@ -43,11 +44,11 @@ header {
   border-bottom: thick solid #1d2221;
   background: #c9092a; }
   header h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     line-height: 1rem;
     float: left;
     margin: 0;
-    margin-top: .4em;
+    margin-top: .5em;
     margin-left: .5em;
     color: #efefef; }
     header h1 .hideForMobile {
@@ -93,7 +94,7 @@ header {
         display: block;
         margin: 0;
         padding: 0; }
-        header #mainNav ul li a:hover {
+        header #mainNav ul li a:hover, header #mainNav ul li a.current {
           color: #efefef;
           background: rgba(225, 10, 47, 0.5); }
         header #mainNav ul li a {
