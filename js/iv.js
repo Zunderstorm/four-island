@@ -50,31 +50,59 @@ var natures = [
 // iv = ((statVal/mod - 5)*100)/level - 2*base - ev/4;
 
 function calcIVs(mon,stats,level, EVs,nature){
+  console.log(mon + "\n stats:" + stats + "\n level: " + level + "\n EVs: " + EVs + "\n Nature: " + nature);
   var IVs = [];
+  // var IVmin = [];
+  // var IVmax =[];
   var s = ["hp","atk","def","spa","spd","spe"];
   var bases = pokedex[mon].baseStats;
-  for(var i=0;i<6;i++){
-    console.log(IVs[i]);
-    // console.log(stats[i]);
-    // console.log(natures[nature][i]);
-    // console.log(level);
-    IVs[i] = ((stats[i]/natures[nature][i])*100)/level - 2*bases[s[i]] - (EVs[i]/4);
+  // for(var i=0;i<6;i++){
+        // IVmin[i]=Math.ceil((Math.ceil(stats[i]/natures[nature][i])-5)*(100/level)-2*bases[s[i]]-(EVs[i]/4));
+    // IVmax[i]=Math.floor((Math.ceil((stats[i]+0.99999)/natures[nature][i])-5)*(100/level)-2*bases[s[i]]-(EVs[i]/4));
+    // IVs[i] = ((stats[i]/natures[nature][i])*100)/level - 2*bases[s[i]] - (EVs[i]/4);
+    // console.log(IVmin[i] + " min");
+    // console.log(IVmax[i] + " max");
+  // }
+
+  IVs[0] =[];
+  for(var x=0;x<32;x++){
+    var tempStat = Math.floor((2*bases["hp"] + x + Math.floor(EVs[0]/4)+100)*level/100 + 10);
+    if(tempStat == stats[0]){
+      IVs[0].push(x);
+    }
   }
-  console.log(bases);
+  for(var i=1;i<6;i++){
+    IVs[i] =[];
+    for(var x=0;x<32;x++){
+      var tempStat = Math.floor((2*bases[s[i]] + x + Math.floor(EVs[i]/4))*level/100 + 5);
+      if(tempStat==stats[i]){
+        IVs[i].push(x);
+      }
+    }
+  }
+
+  // console.log(bases);
+  // return [IVmin,"______",IVmax];
+  for(var i=0;i<6;i++){
+    console.log(s[i] + " " + IVs[i]+"\n");
+  }
   return IVs;
 }
 
-console.log(
-  calcIVs("bulbasaur",[21,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
-);
+console.log("IVS: 10, 31,31,31,31,0");
+calcIVs("bulbasaur",[20,11,11,13,13,9],5,[0,0,0,0,0,0],12) + " IVs"
+
 
 var pokeslist = document.querySelector('#pokes');
 
 // console.log(pokedex);
 
-  // for(var i=1;i<3;i++){
-  //     var newPoke = document.createElement('option');
-  //     newPoke.value = pokedex["bulbasaur"].species;
-  //     pokeslist.appendChild(newPoke);
-  //   }
+var temptemp =0;
+    for (var key in pokedex){
+        var newPoke = document.createElement('option');
+            newPoke.value = key;
+            newPoke.innerHTML = key.charAt(0).toUpperCase() + key.slice(1);
+            pokeslist.appendChild(newPoke);
+    }
+
 })();

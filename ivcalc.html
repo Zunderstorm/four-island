@@ -43,12 +43,14 @@
     <main>
         <form id="ivcalc">
             <section id="pokeinfo" class="clearfix">
-                <label for="pokemon">Pok&eacute;mon:</label><input id="pokemon" type="text" name="pokemon" list="pokes"><br>
-                <datalist name="pokes" id="pokes">
-                </datalist>
+                <label for="pokes">Pok&eacute;mon:</label>
+                <!-- <input id="pokemon" type="text" name="pokemon" list="pokes"><br> -->
+                <select name="pokes" id="pokes">
+                </select>
+
                 <label for="nature">Nature:</label>
-                <input type="text" name="nature" list="natures">
-                <datalist name="natures" id="natures">
+                <!-- <input type="text" name="nature" list="natures"> -->
+                <select name="natures" id="natures">
 
                   <option value="Hardy">Hardy</option>
                   <option value="Lonely">Lonely</option>
@@ -71,7 +73,7 @@
                   <option value="Modest">Modest</option>
                   <option value="Mild">Mild</option>
                   <option value="Quiet">Quiet</option>
-                  <option value="Basful">Bashful</option>
+                  <option value="Bashful">Bashful</option>
                   <option value="Rash">Rash</option>
 
                   <option value="Calm">Calm</option>
@@ -81,16 +83,21 @@
                   <option value="Quirky">Quirky</option>
 
 
-                </datalist>
+                </select>
 
             </section>
             <section id="stats" class="clearfix">
-                <label for="hp">HP</label><input type="number" name="hp"><br>
-                <label for="atk">Attack</label><input type="number" name="atk"><br>
-                <label for="def">Defense</label><input type="number" name="def"><br>
-                <label for="spa">Special Attack</label><input type="number" name="spa"><br>
-                <label for="spd">Special Defense</label><input type="number" name="spd"><br>
-                <label for="spe">Speed</label><input type="number" name="spe"><br>
+                <label for="hp">HP</label>
+                <input type="number" name="hpEVs" placeholder="EVs">
+                <input type="number" name="hp" placeholder="HP"><br>
+                <label for="atk">Attack</label>
+                <input type="number" name="atkEVs" placeholder="Evs">
+                <input type="number" name="atk" placeholder="Atk">
+                <br>
+                <label for="def">Defense</label><input type="number" name="def" placeholder="Def"><br>
+                <label for="spa">Special Attack</label><input type="number" name="spa" placeholder="SpA"><br>
+                <label for="spd">Special Defense</label><input type="number" name="spd" placeholder="SpD"><br>
+                <label for="spe">Speed</label><input type="number" name="spe" placeholder="Spe"><br>
             </section>
             <input type="submit" value="Calculate">
         </form>

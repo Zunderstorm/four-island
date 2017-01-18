@@ -127,6 +127,11 @@ main {
     border: solid thin #1d2221;
     float: right;
     clear: right; }
+  main #ivcalc #stats input[type="number"], main #ivcalc #pokeinfo input[type="number"] {
+    clear: none;
+    margin-right: 0.5em;
+    max-width: 3em;
+    text-align: right; }
   main #ivcalc #stats label, main #ivcalc #pokeinfo label {
     float: left;
     clear: left; }

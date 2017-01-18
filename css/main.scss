@@ -206,6 +206,12 @@ main
         float:right;
         clear: right;
       }
+      input[type="number"]{
+        clear: none;
+        margin-right: 0.5em;
+        max-width: 3em;
+        text-align: right;
+      }
       label{
         float:left;
         clear:left;
