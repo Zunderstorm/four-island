@@ -3,6 +3,7 @@
     var ivcalc = document.querySelector("#ivcalc");
     var rowAdd = document.querySelector("#rowAdd");
     var currentRow = document.querySelector("li.row.current");
+    var s = ["hp", "atk", "def", "spa", "spd", "spe"];
     var natures = [
         [1, 1, 1, 1, 1, 1], //hardy - 0
         [1, 1.1, 0.9, 1, 1, 1], //lonely - 1
@@ -39,7 +40,6 @@
         console.log(mon + "\n stats:" + stats + "\n level: " + level + "\n EVs: " + EVs + "\n Nature: " + nature);
         var IVs = [];
 
-        var s = ["hp", "atk", "def", "spa", "spd", "spe"];
         var bases = pokedex[mon].baseStats;
 
         IVs[0] = [];
@@ -73,33 +73,40 @@
         pokeslist.appendChild(newPoke);
     }
 
-    function findSimilar(arrA,arrB){
-      var arr = arrA.concat(arrB);
-      arr = arr.sort();
-      var empty = true;
-      console.log(arr);
-      console.log("^ arr");
-      var sortedArray = arr.slice().sort();
-      var res = [];
-      for(var i=0;i<arr.length-1;i++){
-        if(sortedArray[i+1] == sortedArray[i]){
-          res.push(sortedArray[i]);
-          if(empty){
-            empty = false;
-          }
+    function findSimilar(arrA, arrB) {
+        var arr = arrA.concat(arrB);
+        arr = arr.sort();
+        var empty = true;
+        // console.log(arr);
+        // console.log("^ arr");
+        var sortedArray = arr.slice().sort();
+        var res = [];
+        for (var i = 0; i < arr.length - 1; i++) {
+            if (sortedArray[i + 1] == sortedArray[i]) {
+                res.push(sortedArray[i]);
+                if (empty) {
+                    empty = false;
+                }
+            }
         }
-      }
-      if(empty){
-        res = arr;
-      }
-      return res;
+        if (empty) {
+            res = arr;
+        }
+        return res;
     }
 
     function displayIVs(event) {
         event.preventDefault();
         var invalid = false;
         results.innerHTML = "";
-        var resultsSpread = [[],[],[],[],[],[]];
+        var resultsSpread = [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ];
         var rows = document.querySelectorAll("li.row");
         console.log(rows.length);
         var mon = ivcalc.querySelector('#pokemon').value;
@@ -128,53 +135,65 @@
             if (!invalid) {
                 var ivspread = calcIVs(mon, stats, level, EVs, nature);
                 for (var i = 0; i < ivspread.length; i++) {
-                  console.log(ivspread[i]);
-                  resultsSpread[i] = findSimilar(resultsSpread[i],ivspread[i]);
-                }
+                    // console.log(ivspread[i]);
+                    resultsSpread[i] = findSimilar(resultsSpread[i], ivspread[i]);
+                  }
+              for (var i = 0; i < 6; i++) {
+                console.log(i);
+                  var newResultRow = document.createElement('div');
+                  newResultRow.innerHTML += s[i].toUpperCase() + ":<br>";
+                  newResultRow.classList.add('result');
+                  // console.log(resultsSpread.length + " length");
+                    for(var j=resultsSpread[i].length-1; j>=0;j--){
+                      newResultRow.innerHTML += resultsSpread[i][j] + "<br>";
+                    }
+                results.appendChild(newResultRow);
+              }
                 console.log(resultsSpread);
             } else {
-              if(!alerted){
-                alert("Invalid Input! Please try again.");
-              }
+                if (!alerted) {
+                    alert("Invalid Input! Please try again.");
+                }
             }
-        }//end for rows
+        } //end for rows
     }
 
-  function insertAfter(el, referenceNode) {
+    function insertAfter(el, referenceNode) {
         referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-  }
-
-
-  function toggleStats(event){
-    event.preventDefault();
-    var it = event.currentTarget;
-    it.parentNode.classList.toggle('closed');
-    if(it.parentNode.classList.contains('closed')){
-      it.innerHTML = "+";
-      it.parentNode.querySelector('.lvl').disabled=true;
-    }else{
-      it.innerHTML = "-";
-      it.parentNode.querySelector('.lvl').disabled=false;
     }
-  }
-function addRow(event){
-  event.preventDefault();
-  var it = event.currentTarget;
-  var newRow = document.createElement('li');
-  var tempHTML = it.parentNode.querySelector('li.row').innerHTML;
-  newRow.classList.add('row');
-  newRow.classList.add('clearfix');
-  newRow.innerHTML= tempHTML;
-  currentRow = newRow;
-  insertAfter(newRow,rowAdd);
-  it.parentNode.querySelector('.expand').innerHTML ="-";
-  it.parentNode.querySelector('.lvl').disabled=false;
-  it.parentNode.querySelector('.expand').addEventListener('click',toggleStats,false);
-}
+
+
+    function toggleStats(event) {
+        event.preventDefault();
+        var it = event.currentTarget;
+        it.parentNode.classList.toggle('closed');
+        if (it.parentNode.classList.contains('closed')) {
+            it.innerHTML = "+";
+            it.parentNode.querySelector('.lvl').disabled = true;
+        } else {
+            it.innerHTML = "-";
+            it.parentNode.querySelector('.lvl').disabled = false;
+        }
+    }
+
+    function addRow(event) {
+        event.preventDefault();
+        var it = event.currentTarget;
+        var newRow = document.createElement('li');
+        var tempHTML = it.parentNode.querySelector('li.row').innerHTML;
+        newRow.classList.add('row');
+        newRow.classList.add('clearfix');
+        newRow.innerHTML = tempHTML;
+        currentRow = newRow;
+        insertAfter(newRow, rowAdd);
+        it.parentNode.querySelector('.expand').innerHTML = "-";
+        it.parentNode.querySelector('.lvl').disabled = false;
+        it.parentNode.querySelector('.expand').addEventListener('click', toggleStats, false);
+    }
 
 
 
-    document.querySelector('.expand').addEventListener('click',toggleStats,false);
+    document.querySelector('.expand').addEventListener('click', toggleStats, false);
     rowAdd.addEventListener('click', addRow, false);
     ivcalc.addEventListener('submit', displayIVs, false);
 })();

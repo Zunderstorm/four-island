@@ -37,6 +37,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   box-sizing: border-box;
   width: 100%;
   padding: 1em;
@@ -148,7 +149,7 @@ main {
       margin-top: 1em;
       border-left: thin solid #1d2221;
       position: relative;
-      z-index: -1;
+      z-index: 1;
       margin-bottom: 1em; }
       main #ivcalc #entries li .stats {
         display: block; }
@@ -217,9 +218,17 @@ main {
     float: left;
     clear: left; }
 
-#results .ivspread {
-  width: 100%;
-  font-size: 0.5rem; }
+#results {
+  padding-top: 2em; }
+  #results .ivspread {
+    width: 100%;
+    font-size: 0.5rem; }
+  #results .result {
+    width: 16%;
+    margin: 0;
+    text-align: center;
+    float: left;
+    display: block; }
 
 footer {
   font-size: .5em;
