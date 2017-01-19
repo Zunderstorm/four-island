@@ -4,7 +4,10 @@ var urlsToCache = [
   '/',
   '/css/main.css',
   '/js/main.js',
-  '/js/pokedex.js'
+  '/js/pokedex.js',
+  '/js/iv.js',
+  '/index.html',
+  '/ivcalc.html'
 ];
 
 self.addEventListener('install', function(event) {
