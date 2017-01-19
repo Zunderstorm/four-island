@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2017-01-19:v1
+
+# Explicitly cached 'master entries'.
+CACHE:
+css/main.css
+hi-res-icon.png
+icon.png
+js/pokedex.js
+js/main.js
+js/iv.js
+index.html
+ivcalc.html

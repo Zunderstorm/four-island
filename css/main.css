@@ -119,7 +119,6 @@ main {
     height: 8em;
     width: 8em; }
   main #ivcalc #entries {
-    position: relative;
     list-style: none;
     margin: 0;
     margin-bottom: 1em;
@@ -149,6 +148,7 @@ main {
       margin-top: 1em;
       border-left: thin solid #1d2221;
       position: relative;
+      z-index: -1;
       margin-bottom: 1em; }
       main #ivcalc #entries li .stats {
         display: block; }

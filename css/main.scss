@@ -194,7 +194,7 @@ main
   }
   #ivcalc{
     #entries{
-      position: relative;
+      // position: relative;
       list-style: none;
       margin:0;
       margin-bottom: 1em;
@@ -226,6 +226,7 @@ main
         border-left:thin solid $pokedex_black;
         // background: $pokedex_red;
         position: relative;
+        z-index: -1;
         margin-bottom: 1em;
         .stats{
           display: block;
