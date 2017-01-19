@@ -73,12 +73,33 @@
         pokeslist.appendChild(newPoke);
     }
 
+    function findSimilar(arrA,arrB){
+      var arr = arrA.concat(arrB);
+      arr = arr.sort();
+      var empty = true;
+      console.log(arr);
+      console.log("^ arr");
+      var sortedArray = arr.slice().sort();
+      var res = [];
+      for(var i=0;i<arr.length-1;i++){
+        if(sortedArray[i+1] == sortedArray[i]){
+          res.push(sortedArray[i]);
+          if(empty){
+            empty = false;
+          }
+        }
+      }
+      if(empty){
+        res = arr;
+      }
+      return res;
+    }
 
     function displayIVs(event) {
         event.preventDefault();
         var invalid = false;
         results.innerHTML = "";
-        var resultsSpread = [];
+        var resultsSpread = [[],[],[],[],[],[]];
         var rows = document.querySelectorAll("li.row");
         console.log(rows.length);
         var mon = ivcalc.querySelector('#pokemon').value;
@@ -107,10 +128,10 @@
             if (!invalid) {
                 var ivspread = calcIVs(mon, stats, level, EVs, nature);
                 for (var i = 0; i < ivspread.length; i++) {
-                  var temp = document.createElement('p');
-                  temp.innerHTML = ivspread[i];
-                  results.appendChild(temp);
+                  console.log(ivspread[i]);
+                  resultsSpread[i] = findSimilar(resultsSpread[i],ivspread[i]);
                 }
+                console.log(resultsSpread);
             } else {
               if(!alerted){
                 alert("Invalid Input! Please try again.");
@@ -118,6 +139,7 @@
             }
         }//end for rows
     }
+
   function insertAfter(el, referenceNode) {
         referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
   }
