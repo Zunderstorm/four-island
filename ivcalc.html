@@ -42,7 +42,6 @@
     </header>
     <main>
         <form id="ivcalc">
-            <section id="pokeinfo" class="clearfix">
                 <label for="pokemon">Pok&eacute;mon:</label>
                 <!-- <input id="pokemon" type="text" name="pokemon" list="pokes"><br> -->
                 <select name="pokemon" id="pokemon">
@@ -82,43 +81,48 @@
                   <option value="23">Careful</option>
                   <option value="24">Quirky</option>
 
-
                 </select>
-                <label for="lvl">Level:</label>
-                <input id="lvl" type="number" min="1" max="100" placeholder="Level" name="lvl"><br>
-
-            </section>
-            <section id="stats" class="clearfix">
-                <label for="hp">HP</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="hpEVs" placeholder="EVs">
-                <input type="number" name="hp" class="stat" id="hp" placeholder="HP">
-                <br>
-                <label for="atk">Attack</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="atkEVs" placeholder="Evs">
-                <input type="number" name="atk" class="stat" id="atk" placeholder="Atk">
-                <br>
-                <label for="def">Defense</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="defEVs" placeholder="Evs">
-                <input type="number" name="def" class="stat" id="def" placeholder="Def">
-                <br>
-                <label for="spa">Special Attack</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="spaEVs" placeholder="Evs">
-                <input type="number" name="spa" class="stat" id="spa" placeholder="SpA">
-                <br>
-                <label for="spd">Special Defense</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="spdEVs" placeholder="Evs">
-                <input type="number" name="spd" class="stat" id="spd" placeholder="SpD">
-                <br>
-                <label for="spe">Speed</label>
-                <input type="checkbox">
-                <input type="number" min="0" max="255" class="ev" name="speEVs" placeholder="Evs">
-                <input type="number" name="spe" class="stat" id="spe" placeholder="Spe">
-            </section>
+                <!-- end natures -->
+                <ul id="entries">
+                  <a href="#" id="rowAdd">Add a Row</a>
+                  <li class="clearfix row">
+                    <a href="#" class="expand">-</a>
+                      <label for="lvl">Level:</label>
+                      <input class="lvl" type="number" min="1" max="100" placeholder="Level" name="lvl">
+                      <div class="clearfix stats">
+                          <label for="hp">HP</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="hpEVs" placeholder="EVs">
+                          <input type="number" name="hp" class="stat" id="hp" placeholder="HP">
+                          <br>
+                          <label for="atk">Attack</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="atkEVs" placeholder="Evs">
+                          <input type="number" name="atk" class="stat" id="atk" placeholder="Atk">
+                          <br>
+                          <label for="def">Defense</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="defEVs" placeholder="Evs">
+                          <input type="number" name="def" class="stat" id="def" placeholder="Def">
+                          <br>
+                          <label for="spa">Special Attack</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="spaEVs" placeholder="Evs">
+                          <input type="number" name="spa" class="stat" id="spa" placeholder="SpA">
+                          <br>
+                          <label for="spd">Special Defense</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="spdEVs" placeholder="Evs">
+                          <input type="number" name="spd" class="stat" id="spd" placeholder="SpD">
+                          <br>
+                          <label for="spe">Speed</label>
+                          <!--<input type="checkbox">-->
+                          <input type="number" min="0" max="255" class="ev" name="speEVs" placeholder="Evs">
+                          <input type="number" name="spe" class="stat" id="spe" placeholder="Spe">
+                      </div><!-- end stats -->
+                    </li>
+                  <!-- end one entry -->
+                </ul>
             <input type="submit" value="Calculate">
         </form>
         <section id="results">

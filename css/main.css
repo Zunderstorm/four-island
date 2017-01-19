@@ -118,6 +118,54 @@ main {
     margin: 0 auto;
     height: 8em;
     width: 8em; }
+  main #ivcalc #entries {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    clear: both;
+    display: block;
+    padding-top: 0.2em; }
+    main #ivcalc #entries #rowAdd {
+      width: 80%;
+      max-width: 14em;
+      clear: both;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      box-sizing: border-box;
+      display: block;
+      text-align: center;
+      margin: 1em auto;
+      background: #7b1724;
+      color: #efefef; }
+    main #ivcalc #entries li {
+      float: right;
+      width: 90%;
+      clear: both;
+      display: block;
+      padding: 0;
+      margin: 0;
+      margin-top: 1em;
+      border-left: thin solid #1d2221;
+      position: relative;
+      margin-bottom: 1em; }
+      main #ivcalc #entries li .stats {
+        display: block; }
+      main #ivcalc #entries li .expand {
+        position: absolute;
+        left: -2em;
+        text-align: center;
+        width: 1.4em;
+        height: 1.4em;
+        line-height: 1.4em;
+        text-decoration: none;
+        color: #efefef;
+        display: block;
+        background: #c9092a;
+        border-radius: 50%; }
+    main #ivcalc #entries li.closed .stats {
+      display: none; }
   main #ivcalc input[type="submit"] {
     display: block;
     border: solid medium #1d2221;
@@ -129,17 +177,31 @@ main {
     margin: 0 auto;
     clear: right;
     box-sizing: border-box;
-    padding: 1em; }
-  main #ivcalc #stats input, main #ivcalc #stats label, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo label, main #ivcalc #pokeinfo select {
+    padding: 1em;
+    float: none; }
+  main #ivcalc .addRow {
+    float: right;
+    display: block;
+    width: 1.8em;
+    height: 1.8em;
+    margin: auto 1em;
+    line-height: 1em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    color: #efefef;
+    background: #c9092a; }
+  main #ivcalc input, main #ivcalc label, main #ivcalc select {
     width: 100%;
     max-width: 8em;
-    margin-bottom: 1em;
     padding: 0.4em; }
-  main #ivcalc #stats input, main #ivcalc #stats select, main #ivcalc #pokeinfo input, main #ivcalc #pokeinfo select {
+  main #ivcalc input {
+    margin-top: 0.2em; }
+  main #ivcalc input, main #ivcalc select {
     border: solid thin #1d2221;
     float: right;
     clear: right; }
-  main #ivcalc #stats input[type="radio"], main #ivcalc #stats input[type="checkbox"], main #ivcalc #pokeinfo input[type="radio"], main #ivcalc #pokeinfo input[type="checkbox"] {
+  main #ivcalc input[type="radio"], main #ivcalc input[type="checkbox"] {
     float: right;
     width: 1.5em;
     height: 1.5em;
@@ -147,11 +209,11 @@ main {
     margin: 0;
     padding: 0;
     margin-top: .25em; }
-  main #ivcalc #stats input[type="number"], main #ivcalc #pokeinfo input[type="number"] {
+  main #ivcalc input[type="number"] {
     clear: none;
     margin-right: 0.5em;
     max-width: 4em; }
-  main #ivcalc #stats label, main #ivcalc #pokeinfo label {
+  main #ivcalc label {
     float: left;
     clear: left; }
 

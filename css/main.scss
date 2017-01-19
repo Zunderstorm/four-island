@@ -193,6 +193,63 @@ main
     }
   }
   #ivcalc{
+    #entries{
+      position: relative;
+      list-style: none;
+      margin:0;
+      margin-bottom: 1em;
+      padding:0;
+      clear: both;
+      display: block;
+      padding-top:0.2em;
+      #rowAdd{
+        width:80%;
+        max-width: 14em;
+        clear:both;
+        text-decoration: none;
+        padding:0.5em 1em;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        margin:1em auto;
+        background: $pokedex_dark_red;
+        color:$pokedex_white;
+      }
+      li{
+        float: right;
+        width:90%;
+        clear: both;
+        display: block;
+        padding:0;
+        margin:0;
+        margin-top:1em;
+        border-left:thin solid $pokedex_black;
+        // background: $pokedex_red;
+        position: relative;
+        margin-bottom: 1em;
+        .stats{
+          display: block;
+        }
+        .expand{
+          position: absolute;
+          left:-2em;
+          text-align: center;
+          width:1.4em;
+          height:1.4em;
+          line-height: 1.4em;
+          text-decoration: none;
+          color:$pokedex_white;
+          display: block;
+          background: $pokedex_red;
+          border-radius: 50%;
+        }
+      }
+      li.closed{
+        .stats{
+          display: none;
+        }
+      }
+    }
     input[type="submit"]{
       display: block;
       border:solid medium $pokedex_black;
@@ -205,14 +262,31 @@ main
       clear: right;
       box-sizing: border-box;
       padding:1em;
+      float: none;
     }
-    #stats, #pokeinfo{
-
+    .addRow{
+      float:right;
+      display: block;
+      width:1.8em;
+      height:1.8em;
+      margin:auto 1em;
+      line-height: 1em;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 50%;
+      color:$pokedex_white;
+      background: $pokedex_red;
+    }
+    // #stats, #pokeinfo{
+    //
       input, label,select{
         width:100%;
         max-width: 8em;
-        margin-bottom: 1em;
+        // margin-bottom: 1em;
         padding:0.4em;
+      }
+      input{
+        margin-top:0.2em;
       }
       input,select{
         border:solid thin $pokedex_black;
@@ -239,7 +313,7 @@ main
         float:left;
         clear:left;
       }
-    }
+    // }
   }
     width: 100%;
     max-width: 22em;
