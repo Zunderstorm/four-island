@@ -230,6 +230,73 @@ main {
     float: left;
     display: block; }
 
+#counterCont .add {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  background: #7b1724;
+  color: #efefef;
+  margin-top: 1em;
+  display: block;
+  text-align: center;
+  border: thick solid #1d2221;
+  text-decoration: none;
+  text-transform: uppercase; }
+#counterCont .add:hover {
+  background: #c9092a; }
+#counterCont .counter {
+  margin: 1em auto;
+  border: thick solid #1d2221;
+  width: 16em;
+  position: relative; }
+  #counterCont .counter .sprite {
+    display: block;
+    width: 100%;
+    max-width: 7em;
+    height: 7em;
+    margin: 0 auto;
+    margin-top: 0.5em; }
+  #counterCont .counter .num {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 4em; }
+  #counterCont .counter .del {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: 1em;
+    height: 1em;
+    text-decoration: none;
+    color: #c9092a;
+    text-align: center;
+    display: block; }
+  #counterCont .counter .plusminus {
+    width: 100%; }
+    #counterCont .counter .plusminus .plus {
+      text-align: center;
+      float: left;
+      width: 50%;
+      background: #5baee4;
+      max-width: 8em;
+      height: 4em;
+      line-height: 4em;
+      text-align: center;
+      float: right;
+      color: #efefef;
+      text-decoration: none; }
+    #counterCont .counter .plusminus .minus {
+      background: #2f99dd;
+      max-width: 8em;
+      height: 4em;
+      line-height: 4em;
+      text-align: center;
+      float: right;
+      width: 50%;
+      color: #efefef;
+      text-decoration: none; }
+
 footer {
   font-size: .5em;
   box-sizing: border-box;

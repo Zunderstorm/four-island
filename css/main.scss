@@ -181,7 +181,6 @@ header
         }
     }
 }
-
 main
 {
   #pokemon-of-the-day{
@@ -338,6 +337,89 @@ main
     display: block;
   }
 }
+
+
+#counterCont{
+  .add{
+    width:100%;
+    margin:0 auto;
+    padding:0.5em 1em;
+    box-sizing: border-box;
+    background:$pokedex_dark_red;
+    color:$pokedex_white;
+    margin-top:1em;
+    display: block;
+    text-align: center;
+    border:thick solid $pokedex_black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .add:hover{
+    background: $pokedex_red;
+  }
+  .counter{
+    margin:1em auto;
+    border:thick solid $pokedex_black;
+    width:16em;
+    position: relative;
+    .sprite{
+      display: block;
+      width:100%;
+      max-width: 7em;
+      height:7em;
+      margin:0 auto;
+      margin-top:0.5em;
+    }
+    .num{
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 4em;
+    }
+    .del{
+      position: absolute;
+      top:0.5em;
+      right:0.5em;
+      width: 1em;
+      height:1em;
+      text-decoration: none;
+      color:$pokedex_red;
+      text-align: center;
+      display: block;
+    }
+    .plusminus{
+      .plus{
+        text-align: center;
+        float:left;
+        width:50%;
+        background: lighten($pokedex_blue,10);
+        max-width:8em;
+        height:4em;
+        line-height:4em;
+        text-align: center;
+        float: right;
+        color:$pokedex_white;
+        text-decoration: none;
+      }
+      .minus{
+        background: $pokedex_blue;
+        max-width:8em;
+        height:4em;
+        line-height:4em;
+        text-align: center;
+        float: right;
+        width:50%;
+        color:$pokedex_white;
+        text-decoration: none;
+      }
+      width:100%;
+    }
+  }
+}
+
+
+
+
 
 footer
 {
