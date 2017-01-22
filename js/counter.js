@@ -86,11 +86,9 @@
       this.bust = function(event){
         event.preventDefault();
         var it = event.currentTarget;
-        counters[obj.id] = counters[counters.length-1];
-        counters[obj.id].setID(counters[counters.length-1].id);
-        console.log(counters[obj.id]);
+        counters[counters.length-1].setID(obj.id);
         if(localStore){
-          localStorage.setItem(obj.id,JSON.stringify(counters[obj.id]));
+          localStorage.setItem(obj.id,JSON.stringify(counters[counters.length-1]));
         }
         obj.update();
         counters[counters.length-1] = null;
