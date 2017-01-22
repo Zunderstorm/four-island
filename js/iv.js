@@ -66,12 +66,16 @@
 
     var pokeslist = document.querySelector('#pokemon');
     var temptemp = 0;
-    for (var key in pokedex) {
-        var newPoke = document.createElement('option');
-        newPoke.value = key;
-        newPoke.innerHTML = key.charAt(0).toUpperCase() + key.slice(1);
-        pokeslist.appendChild(newPoke);
-    }
+    
+
+for(var i=0;i<pokemonsa.length;i++){
+  var newPoke = document.createElement('option');
+  newPoke.value = pokemonsa[i].key;
+  newPoke.innerHTML = pokemonsa[i].pokeName;
+  pokeslist.appendChild(newPoke);
+}
+
+    // console.log(pokemonsa);
 
     function findSimilar(arrA, arrB) {
         var arr = arrA.concat(arrB);

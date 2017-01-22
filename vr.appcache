@@ -2,12 +2,16 @@ CACHE MANIFEST
 # 2017-01-19|3:47pm|v0.1.0
 # Explicitly cached 'master entries'.
 CACHE:
+#CSS---------------------------------
 css/main.css
+#IMG-----------------------------------
 hi-res-icon.png
 icon.png
+img/sprites/default.png
+#JS------------------------------------
 js/pokedex.js
 js/main.js
 js/iv.js
+#HTML-------------------------------
 index.html
 ivcalc.html
-img/sprites/default.png

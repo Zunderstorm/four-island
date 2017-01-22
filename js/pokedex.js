@@ -12839,3 +12839,14 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	}
 };
+
+
+var pokemonsa = [];
+for (var key in pokedex) {
+		var pokeName = pokedex[key].species.charAt(0).toUpperCase() + pokedex[key].species.slice(1);
+		var ptemp = {"key":key,"pokeName":pokeName};
+		pokemonsa.push(ptemp);
+	}
+	pokemonsa = pokemonsa.sort(function(a,b){
+		return ( (a.pokeName < b.pokeName) ? -1 : ( (a.pokeName == b.pokeName) ? 0 : 1) );
+	});
