@@ -1,5 +1,6 @@
 (function(){
   var counters = [];
+  var countersRear=0;
   var localStore = false;
   if (typeof(Storage) !== "undefined") {
     localStore = true;
@@ -96,25 +97,31 @@
       }
       this.bust = function(event){
         event.preventDefault();
-        var it = event.currentTarget;
+        var it = event.currentTarget;//it references the button that is clicked
         // counters[counters.length-1].setID(obj.id);
-        if(counters.length>1){
-          counters[counters.length-1].setID(obj.id);
+        if(countID>0){
+          console.log(countersRear-1);
+          counters[countersRear-1].setID(obj.id);
           //figure out something with a rear variable
         }
+        console.log(counters);
         if(localStore){
-          localStorage.setItem(obj.id,JSON.stringify(counters[counters.length-1]));
+          localStorage.setItem(obj.id,JSON.stringify(counters[countersRear-1]));
         }
         obj.update();
-        counters[counters.length-1] = null;
+        counters[obj.id] = counters[countersRear-1];
+        counters[countersRear-1] = null;
         countID--;
         if(localStore){
           localStorage.setItem("countID",countID);
-          localStorage.removeItem(counters.length-1);
+          localStorage.removeItem(countersRear-1);
         }
+        countersRear--;
         it.parentNode.parentNode.removeChild(it.parentNode);
-        obj.update();
-        return;
+        // obj.update();
+        // return;
+        console.log(counters);
+
       }
       this.add = function(){
         document.querySelector("#counterCont").appendChild(counter);
@@ -146,6 +153,7 @@ function  createAddIncrease(){
     localStorage.setItem("countID",countID);
   }
   counters.push(temp);
+  countersRear++;
 }
 
 
@@ -158,6 +166,7 @@ function loadCounters(){
         counters[i] = new Counter(temp.id,temp.pokemon,temp.value);
         console.log(counters[i]);
         counters[i].add();
+        countersRear++;
       }
   }
 }
