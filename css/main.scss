@@ -181,6 +181,36 @@ header
         }
     }
 }
+
+
+.pokeForm{
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  width:14em;
+  overflow: visible;
+  input:not([type="submit"]){
+    box-sizing: border-box;
+    display: inline-block;
+    width:50%;
+    max-width: 10em;
+    margin:0;
+    // float: left;
+    padding:0.4em;
+  }
+  input[type="submit"]{
+    box-sizing: border-box;
+    // float:left;
+    display: inline-block;
+    margin:0;
+    width:40%;
+    background: $pokedex_red;
+    padding:0.5em;
+    border:0;
+  }
+}
+
+
 main
 {
   #pokemon-of-the-day{

@@ -107,6 +107,28 @@ header {
           text-transform: uppercase;
           color: inherit; }
 
+.pokeForm {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 14em;
+  overflow: visible; }
+  .pokeForm input:not([type="submit"]) {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    max-width: 10em;
+    margin: 0;
+    padding: 0.4em; }
+  .pokeForm input[type="submit"] {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    width: 40%;
+    background: #c9092a;
+    padding: 0.5em;
+    border: 0; }
+
 main {
   width: 100%;
   max-width: 22em;

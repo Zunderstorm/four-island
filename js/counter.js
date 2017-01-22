@@ -17,6 +17,9 @@
     var plus = document.createElement('a');
     var minus = document.createElement('a');
     var del = document.createElement('a');
+    // var pokeForm = document.createElement('form');
+    // var poke = document.createElement('input');
+    // var sub = document.createElement('input');
     this.setPokemon = function(input){
       this.pokemon = input;
       img.src = "img/sprites/"+input+".jpg";
@@ -31,6 +34,8 @@
     counter.id = this.id;
     img.src = "img/sprites/"+pokemon+".png";
     img.classList.add('sprite');
+    // pokeForm.classList.add('pokeForm');
+    // pokeForm.classList.add('clearfix');
     num.classList.add('num');
     pm.classList.add('plusminus');
     pm.classList.add('clearfix');
@@ -45,7 +50,12 @@
     plus.innerHTML="+";
     minus.innerHTML="-";
     del.innerHTML = "X";
+    // sub.type = "submit";
+    // sub.value = "Submit";
+    // pokeForm.appendChild(poke);
+    // pokeForm.appendChild(sub);
     counter.appendChild(img);
+    // counter.appendChild(pokeForm);
     counter.appendChild(num);
     pm.appendChild(plus);
     pm.appendChild(minus);
@@ -70,6 +80,7 @@
       }
       this.update =function(){
         num.innerHTML = this.value;
+        return;
       }
       this.subtract = function(event){
         event.preventDefault();
@@ -86,7 +97,11 @@
       this.bust = function(event){
         event.preventDefault();
         var it = event.currentTarget;
-        counters[counters.length-1].setID(obj.id);
+        // counters[counters.length-1].setID(obj.id);
+        if(counters.length>1){
+          counters[counters.length-1].setID(obj.id);
+          //figure out something with a rear variable
+        }
         if(localStore){
           localStorage.setItem(obj.id,JSON.stringify(counters[counters.length-1]));
         }
@@ -99,6 +114,7 @@
         }
         it.parentNode.parentNode.removeChild(it.parentNode);
         obj.update();
+        return;
       }
       this.add = function(){
         document.querySelector("#counterCont").appendChild(counter);
