@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- <html> -->
+<html manifest="vr.appcache">
+<!--UPDATE vr.appcache to force cache updates!-->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<title>Four Island</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+<link rel="icon" sizes="192x192" href="hi-res-icon.png"><!--FOR ANDROID-->
+<link rel="apple-touch-icon" sizes="128x128" href="icon.png"><!--FOR IPHONE-->
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="icon.png"><!--FOR IPHONE-->
+<meta name="apple-mobile-web-app-capable" content="yes"><!--FOR IPHONE-->
+<meta name="mobile-web-app-capable" content="yes"><!--FOR ANDROID-->
+</head>
+<body>
+<header>
+  <div class="blueball"></div>
+  <h1>Four Island</h1>
+  <!-- <h1>P<span class="hideForMobile">OK&eacute;MON </span>T<span class="hideForMobile">RAINING </span>T<span class="hideForMobile">OOL</span> </h1> -->
+  <a href="#" class="hamburger"><div class="top"></div><div class="mid"></div><div class="bot"></div></a>
+  <nav id="mainNav" class="closed">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="ivcalc.html">IV Calculator</a></li>
+      <li><a href="#">Breeding</a></li>
+      <li><a href="#">EV Training</a></li><li><a href="counter.html">Chain Counter</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!-- <div id="pokemon-of-the-day">
+    <img src="#" alt="#">
+  </div> -->
+  <p>Welcome! I designed this web app with the goal of making Competitve Breeding, Training and Battling easier.
+    This suite of tools is inspired by similar tools from the likes of Serebii.net, BattleTower.com, and many others.
+    I thought I would build my own version, from scratch, to give back the community.
+  </p>
+  <p>Check us out on <a href="http://reddit.com/r/FourIsland">Reddit!</a>
+  <p>If you'd like to contribute, I'd love the help! <a href="http://github.com/xp-bar/four-island" target="_blank">View the source on Github</a>, or add a comment on the issue marked <i>contributions</i>.
+  </p>
+</main>
+<footer class="clearfix">
+  <div class="left">
+    View on <a href="http://github.com/xp-bar/four-island" target="_blank">Github</a>.
+  </div>
+  <div class="right"><a id="copyToggle" href="#">&copy; Information</a></div>
+  <div class="center hide">
+    Tool &copy; xp-bar 2017.<br>
+    Pokémon And All Respective Names are Trademark &amp; &copy; Nintendo 1996-2017.<br>
+    This is a fan site. No affiliation or copyright infringement are intended with Nintendo, Pok&eacute;mon, or Gamefreak, or any further license holders of the Pok&eacute;mon Brand. <br><br><br> This app is distributed using an <a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a> License, and uses some assets from <a href="https://github.com/Zarel/Pokemon-Showdown">Pokemon Showdown</a>, namely their pokedex.js file and their spritesheet.
+  </div>
+</footer>
+<script src="js/pokedex.js"></script>
+<script src="js/main.js"></script>
+<script src="js/day.js"></script>
+</body>
+</html>
