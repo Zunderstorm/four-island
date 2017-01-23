@@ -101,6 +101,9 @@
         // counters[counters.length-1].setID(obj.id);
         if(countID>0){
           console.log(countersRear-1);
+          console.log("countersRear ^ ");
+          console.log(counters);
+          console.log("counters ^ ");
           counters[countersRear-1].setID(obj.id);
           //figure out something with a rear variable
         }
@@ -154,6 +157,7 @@ function  createAddIncrease(){
   }
   counters.push(temp);
   countersRear++;
+  console.log(countersRear);
 }
 
 
