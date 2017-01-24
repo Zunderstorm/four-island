@@ -500,48 +500,4 @@ footer
 
 @media only screen and (min-width:60em)
 {
-    header
-    {
-        h1
-        {
-            .hideForMobile
-            {
-                display: inline;
-            }
-        }
-        .hamburger
-        {
-            display: none;
-        }
-        #mainNav.closed,
-        #mainNav
-        {
-            display: block;
-            float: right;
-
-            margin-top: 0;
-
-            text-align: right;
-            ul
-            {
-                // border:0;
-                display: block;
-
-                box-sizing: border-box;
-                // background-color: transparent;
-                // box-shadow: none;
-                li
-                {
-                    display: inline-block;
-                    a
-                    {
-                        display: inline-block;
-
-                        width: auto;
-                        padding: .5em 1em;
-                    }
-                }
-            }
-        }
-    }
 }

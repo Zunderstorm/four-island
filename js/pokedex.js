@@ -13097,21 +13097,17 @@ for (var key in pokedex) {
 	var pokeName = pokedex[key].species.charAt(0).toUpperCase() + pokedex[key].species.slice(1);
 	var ptemp = {"key":key,"pokeName":pokeName};//for the IV calc
 
+	var temptier = {"key":key,"pokeName":pokeName};
 	if(pokedex[key].tierVI === "ou"){
-		var temptier = {"key":key,"pokeName":pokeName};
 		ou.push(temptier);
 	}else if(pokedex[key].tierVI === "uu"){
-		var temptier = {"key":key,"pokeName":pokeName};
 		uu.push(temptier);
 	}else if(pokedex[key].tierVI === "ru"){
-		var temptier = {"key":key,"pokeName":pokeName};
 		ru.push(temptier);
 	}else if(pokedex[key].tierVI === "nu"){
-		var temptier = {"key":key,"pokeName":pokeName};
 		nu.push(temptier);
 	}else if(pokedex[key].tierVI === "" || pokedex[key].tierVI == null){
 		if(pokedex[key].prevo == null && pokedex[key].forme != "mega" && pokedex[key].evos != null && pokedex[key].banVI != "lc"){
-			var temptier = {"key":key,"pokeName":pokeName};
 			lc.push(temptier);
 		}
 	}

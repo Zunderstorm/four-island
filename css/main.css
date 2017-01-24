@@ -342,27 +342,3 @@ footer {
     text-align: right; }
   footer .hide {
     display: none; }
-
-@media only screen and (min-width: 60em) {
-  header h1 .hideForMobile {
-    display: inline; }
-  header .hamburger {
-    display: none; }
-  header #mainNav.closed,
-  header #mainNav {
-    display: block;
-    float: right;
-    margin-top: 0;
-    text-align: right; }
-    header #mainNav.closed ul,
-    header #mainNav ul {
-      display: block;
-      box-sizing: border-box; }
-      header #mainNav.closed ul li,
-      header #mainNav ul li {
-        display: inline-block; }
-        header #mainNav.closed ul li a,
-        header #mainNav ul li a {
-          display: inline-block;
-          width: auto;
-          padding: .5em 1em; } }
