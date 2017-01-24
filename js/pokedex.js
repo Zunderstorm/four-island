@@ -31,6 +31,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Grass"],
 	},
 	venusaur: {
+		tierVI : "ru",
 		num: 3,
 		species: "Venusaur",
 		types: ["Grass", "Poison"],
@@ -90,6 +91,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Dragon"],
 	},
 	charizard: {
+		tierVI : "nu",
 		num: 6,
 		species: "Charizard",
 		types: ["Fire", "Flying"],
@@ -165,6 +167,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Water 1"],
 	},
 	blastoise: {
+		tierVI : "ru",
 		num: 9,
 		species: "Blastoise",
 		types: ["Water"],
@@ -615,6 +618,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	sandslash: {
+		tierVI : "nu",
 		num: 28,
 		species: "Sandslash",
 		types: ["Ground"],
@@ -864,6 +868,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	golbat: {
+		tierVI : "ru",
 		num: 42,
 		species: "Golbat",
 		types: ["Poison", "Flying"],
@@ -904,6 +909,7 @@ var pokedex = {
 		eggGroups: ["Grass"],
 	},
 	vileplume: {
+		tierVI : "nu",
 		num: 45,
 		species: "Vileplume",
 		types: ["Grass", "Poison"],
@@ -1121,6 +1127,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	primeape: {
+		tierVI : "nu",
 		num: 57,
 		species: "Primeape",
 		types: ["Fighting"],
@@ -1188,6 +1195,7 @@ var pokedex = {
 		eggGroups: ["Water 1"],
 	},
 	poliwrath: {
+		tierVI : "nu",
 		num: 62,
 		species: "Poliwrath",
 		types: ["Water", "Fighting"],
@@ -1537,6 +1545,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	magneton: {
+		tierVI : "ru",
 		num: 82,
 		species: "Magneton",
 		types: ["Electric", "Steel"],
@@ -1709,6 +1718,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	haunter: {
+		tierVI : "nu",
 		num: 93,
 		species: "Haunter",
 		types: ["Ghost", "Poison"],
@@ -1925,6 +1935,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	hitmonlee: {
+		tierVI : "ru",
 		num: 106,
 		species: "Hitmonlee",
 		types: ["Fighting"],
@@ -1939,6 +1950,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	hitmonchan: {
+		tierVI : "nu",
 		num: 107,
 		species: "Hitmonchan",
 		types: ["Fighting"],
@@ -1977,6 +1989,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	weezing: {
+		tierVI : "nu",
 		num: 110,
 		species: "Weezing",
 		types: ["Poison"],
@@ -2002,6 +2015,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Field"],
 	},
 	rhydon: {
+		tierVI : "nu",
 		num: 112,
 		species: "Rhydon",
 		types: ["Ground", "Rock"],
@@ -2044,6 +2058,7 @@ var pokedex = {
 		eggGroups: ["Grass"],
 	},
 	kangaskhan: {
+		tierVI : "nu",
 		num: 115,
 		species: "Kangaskhan",
 		types: ["Normal"],
@@ -2165,6 +2180,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	scyther: {
+		tierVI : "nu",
 		num: 123,
 		species: "Scyther",
 		types: ["Bug", "Flying"],
@@ -2177,6 +2193,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	jynx: {
+		tierVI : "nu",
 		num: 124,
 		species: "Jynx",
 		types: ["Ice", "Psychic"],
@@ -2221,6 +2238,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	pinsir: {
+		tierVI : "nu",
 		num: 127,
 		species: "Pinsir",
 		types: ["Bug"],
@@ -2248,6 +2266,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	tauros: {
+		tierVI : "nu",
 		num: 128,
 		species: "Tauros",
 		types: ["Normal"],
@@ -2352,6 +2371,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	jolteon: {
+		tierVI : "ru",
 		num: 135,
 		species: "Jolteon",
 		types: ["Electric"],
@@ -2406,6 +2426,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Water 3"],
 	},
 	omastar: {
+		tierVI : "nu",
 		num: 139,
 		species: "Omastar",
 		types: ["Rock", "Water"],
@@ -2433,6 +2454,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Water 3"],
 	},
 	kabutops: {
+		tierVI : "nu",
 		num: 141,
 		species: "Kabutops",
 		types: ["Rock", "Water"],
@@ -2447,6 +2469,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Water 3"],
 	},
 	aerodactyl: {
+		tierVI : "ru",
 		num: 142,
 		species: "Aerodactyl",
 		types: ["Rock", "Flying"],
@@ -2694,6 +2717,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	typhlosion: {
+		tierVI : "ru",
 		num: 157,
 		species: "Typhlosion",
 		types: ["Fire"],
@@ -2877,6 +2901,7 @@ var pokedex = {
 		eggGroups: ["Water 2"],
 	},
 	lanturn: {
+		tierVI : "nu",
 		num: 171,
 		species: "Lanturn",
 		types: ["Water", "Electric"],
@@ -2956,6 +2981,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	togetic: {
+		tierVI : "ru",
 		num: 176,
 		species: "Togetic",
 		types: ["Fairy", "Flying"],
@@ -2983,6 +3009,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	xatu: {
+		tierVI : "nu",
 		num: 178,
 		species: "Xatu",
 		types: ["Psychic", "Flying"],
@@ -3274,6 +3301,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	slowking: {
+		tierVI : "ru",
 		num: 199,
 		species: "Slowking",
 		types: ["Water", "Psychic"],
@@ -3387,6 +3415,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	steelix: {
+		tierVI : "nu",
 		num: 208,
 		species: "Steelix",
 		types: ["Steel", "Ground"],
@@ -3428,6 +3457,7 @@ var pokedex = {
 		eggGroups: ["Field", "Fairy"],
 	},
 	granbull: {
+		tierVI : "ru",
 		num: 210,
 		species: "Granbull",
 		types: ["Fairy"],
@@ -3442,6 +3472,7 @@ var pokedex = {
 		eggGroups: ["Field", "Fairy"],
 	},
 	qwilfish: {
+		tierVI : "ru",
 		num: 211,
 		species: "Qwilfish",
 		types: ["Water", "Poison"],
@@ -3522,6 +3553,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	sneasel: {
+		tierVI : "ru",
 		num: 215,
 		species: "Sneasel",
 		types: ["Dark", "Ice"],
@@ -3596,6 +3628,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	piloswine: {
+		tierVI : "nu",
 		num: 221,
 		species: "Piloswine",
 		types: ["Ice", "Ground"],
@@ -3658,6 +3691,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Field"],
 	},
 	mantine: {
+		tierVI : "nu",
 		num: 226,
 		species: "Mantine",
 		types: ["Water", "Flying"],
@@ -3695,6 +3729,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	houndoom: {
+		tierVI : "ru",
 		num: 229,
 		species: "Houndoom",
 		types: ["Dark", "Fire"],
@@ -3813,6 +3848,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	hitmontop: {
+		tierVI : "ru",
 		num: 237,
 		species: "Hitmontop",
 		types: ["Fighting"],
@@ -3866,6 +3902,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	miltank: {
+		tierVI : "nu",
 		num: 241,
 		species: "Miltank",
 		types: ["Normal"],
@@ -4344,6 +4381,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Grass"],
 	},
 	ludicolo: {
+		tierVI : "nu",
 		num: 272,
 		species: "Ludicolo",
 		types: ["Water", "Grass"],
@@ -4383,6 +4421,7 @@ var pokedex = {
 		eggGroups: ["Field", "Grass"],
 	},
 	shiftry: {
+		tierVI : "nu",
 		num: 275,
 		species: "Shiftry",
 		types: ["Grass", "Dark"],
@@ -4408,6 +4447,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	swellow: {
+		tierVI : "nu",
 		num: 277,
 		species: "Swellow",
 		types: ["Normal", "Flying"],
@@ -4658,6 +4698,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Field"],
 	},
 	exploud: {
+		tierVI : "ru",
 		num: 295,
 		species: "Exploud",
 		types: ["Normal"],
@@ -4684,6 +4725,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	hariyama: {
+		tierVI : "nu",
 		num: 297,
 		species: "Hariyama",
 		types: ["Fighting"],
@@ -4828,6 +4870,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	aggron: {
+		tierVI : "nu",
 		num: 306,
 		species: "Aggron",
 		types: ["Steel", "Rock"],
@@ -4869,6 +4912,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	medicham: {
+		tierVI : "ru",
 		num: 308,
 		species: "Medicham",
 		types: ["Fighting", "Psychic"],
@@ -4910,6 +4954,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	manectric: {
+		tierVI : "nu",
 		num: 310,
 		species: "Manectric",
 		types: ["Electric"],
@@ -5116,6 +5161,7 @@ var pokedex = {
 		otherFormes: ["cameruptmega"],
 	},
 	cameruptmega: {
+		tierVI : "ru",
 		num: 323,
 		species: "Camerupt-Mega",
 		baseSpecies: "Camerupt",
@@ -5203,6 +5249,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	flygon: {
+		tierVI : "ru",
 		num: 330,
 		species: "Flygon",
 		types: ["Ground", "Dragon"],
@@ -5281,6 +5328,7 @@ var pokedex = {
 		eggGroups: ["Flying", "Dragon"],
 	},
 	zangoose: {
+		tierVI : "nu",
 		num: 335,
 		species: "Zangoose",
 		types: ["Normal"],
@@ -5391,6 +5439,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	claydol: {
+		tierVI : "nu",
 		num: 344,
 		species: "Claydol",
 		types: ["Ground", "Psychic"],
@@ -5418,6 +5467,7 @@ var pokedex = {
 		eggGroups: ["Water 3"],
 	},
 	cradily: {
+		tierVI : "nu",
 		num: 346,
 		species: "Cradily",
 		types: ["Rock", "Grass"],
@@ -5539,6 +5589,7 @@ var pokedex = {
 		eggGroups: ["Fairy", "Amorphous"],
 	},
 	kecleon: {
+		tierVI : "nu",
 		num: 352,
 		species: "Kecleon",
 		types: ["Normal"],
@@ -5576,6 +5627,7 @@ var pokedex = {
 		otherFormes: ["banettemega"],
 	},
 	banettemega: {
+		tierVI : "ru",
 		num: 354,
 		species: "Banette-Mega",
 		baseSpecies: "Banette",
@@ -5640,6 +5692,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	absol: {
+		tierVI : "ru",
 		num: 359,
 		species: "Absol",
 		types: ["Dark"],
@@ -5705,6 +5758,7 @@ var pokedex = {
 		otherFormes: ["glaliemega"],
 	},
 	glaliemega: {
+		tierVI : "ru",
 		num: 362,
 		species: "Glalie-Mega",
 		baseSpecies: "Glalie",
@@ -5934,6 +5988,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	regirock: {
+		tierVI : "nu",
 		num: 377,
 		species: "Regirock",
 		types: ["Rock"],
@@ -5958,6 +6013,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	registeel: {
+		tierVI : "ru",
 		num: 379,
 		species: "Registeel",
 		types: ["Steel"],
@@ -6214,6 +6270,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Grass"],
 	},
 	torterra: {
+		tierVI : "nu",
 		num: 389,
 		species: "Torterra",
 		types: ["Grass", "Ground"],
@@ -6720,6 +6777,7 @@ var pokedex = {
 		otherForms: ["shelloseast"],
 	},
 	gastrodon: {
+		tierVI : "nu",
 		num: 423,
 		species: "Gastrodon",
 		baseForme: "West",
@@ -6735,6 +6793,7 @@ var pokedex = {
 		otherForms: ["gastrodoneast"],
 	},
 	ambipom: {
+		tierVI : "ru",
 		num: 424,
 		species: "Ambipom",
 		types: ["Normal"],
@@ -6815,6 +6874,7 @@ var pokedex = {
 		eggGroups: ["Field", "Human-Like"],
 	},
 	mismagius: {
+		tierVI : "nu",
 		num: 429,
 		species: "Mismagius",
 		types: ["Ghost"],
@@ -6892,6 +6952,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	skuntank: {
+		tierVI : "nu",
 		num: 435,
 		species: "Skuntank",
 		types: ["Poison", "Dark"],
@@ -6918,6 +6979,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	bronzong: {
+		tierVI : "ru",
 		num: 437,
 		species: "Bronzong",
 		types: ["Steel", "Psychic"],
@@ -6980,6 +7042,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	spiritomb: {
+		tierVI : "ru",
 		num: 442,
 		species: "Spiritomb",
 		types: ["Ghost", "Dark"],
@@ -7142,6 +7205,7 @@ var pokedex = {
 		eggGroups: ["Bug", "Water 3"],
 	},
 	drapion: {
+		tierVI : "ru",
 		num: 452,
 		species: "Drapion",
 		types: ["Poison", "Dark"],
@@ -7241,6 +7305,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Grass"],
 	},
 	abomasnow: {
+		tierVI : "nu",
 		num: 460,
 		species: "Abomasnow",
 		types: ["Grass", "Ice"],
@@ -7312,6 +7377,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	rhyperior: {
+		tierVI : "ru",
 		num: 464,
 		species: "Rhyperior",
 		types: ["Ground", "Rock"],
@@ -7340,6 +7406,7 @@ var pokedex = {
 		eggGroups: ["Grass"],
 	},
 	electivire: {
+		tierVI : "nu",
 		num: 466,
 		species: "Electivire",
 		types: ["Electric"],
@@ -7354,6 +7421,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	magmortar: {
+		tierVI : "nu",
 		num: 467,
 		species: "Magmortar",
 		types: ["Fire"],
@@ -7468,6 +7536,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	gallade: {
+		tierVI : "ru",
 		num: 475,
 		species: "Gallade",
 		types: ["Psychic", "Fighting"],
@@ -7538,6 +7607,7 @@ var pokedex = {
 		eggGroups: ["Fairy", "Mineral"],
 	},
 	rotom: {
+		tierVI : "nu",
 		num: 479,
 		species: "Rotom",
 		types: ["Electric", "Ghost"],
@@ -7613,6 +7683,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	rotommow: {
+		tierVI : "ru",
 		num: 479,
 		species: "Rotom-Mow",
 		baseSpecies: "Rotom",
@@ -7628,6 +7699,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	uxie: {
+		tierVI : "ru",
 		num: 480,
 		species: "Uxie",
 		types: ["Psychic"],
@@ -7640,6 +7712,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	mesprit: {
+		tierVI : "nu",
 		num: 481,
 		species: "Mesprit",
 		types: ["Psychic"],
@@ -8173,6 +8246,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	emboar: {
+		tierVI : "ru",
 		num: 500,
 		species: "Emboar",
 		types: ["Fire", "Fighting"],
@@ -8215,6 +8289,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	samurott: {
+		tierVI : "nu",
 		num: 503,
 		species: "Samurott",
 		types: ["Water"],
@@ -8305,6 +8380,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	liepard: {
+		tierVI : "nu",
 		num: 510,
 		species: "Liepard",
 		types: ["Dark"],
@@ -8590,6 +8666,7 @@ var pokedex = {
 		otherFormes: ["audinomega"],
 	},
 	audinomega: {
+		tierVI : "nu",
 		num: 531,
 		species: "Audino-Mega",
 		baseSpecies: "Audino",
@@ -8617,6 +8694,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	gurdurr: {
+		tierVI : "nu",
 		num: 533,
 		species: "Gurdurr",
 		types: ["Fighting"],
@@ -8673,6 +8751,7 @@ var pokedex = {
 		eggGroups: ["Water 1"],
 	},
 	seismitoad: {
+		tierVI : "ru",
 		num: 537,
 		species: "Seismitoad",
 		types: ["Water", "Ground"],
@@ -8698,6 +8777,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	sawk: {
+		tierVI : "ru",
 		num: 539,
 		species: "Sawk",
 		types: ["Fighting"],
@@ -8827,6 +8907,7 @@ var pokedex = {
 		eggGroups: ["Grass"],
 	},
 	lilligant: {
+		tierVI : "nu",
 		num: 549,
 		species: "Lilligant",
 		types: ["Grass"],
@@ -9001,6 +9082,7 @@ var pokedex = {
 		eggGroups: ["Field", "Dragon"],
 	},
 	scrafty: {
+		tierVI : "ru",
 		num: 560,
 		species: "Scrafty",
 		types: ["Dark", "Fighting"],
@@ -9014,6 +9096,7 @@ var pokedex = {
 		eggGroups: ["Field", "Dragon"],
 	},
 	sigilyph: {
+		tierVI : "ru",
 		num: 561,
 		species: "Sigilyph",
 		types: ["Psychic", "Flying"],
@@ -9037,6 +9120,7 @@ var pokedex = {
 		eggGroups: ["Mineral", "Amorphous"],
 	},
 	cofagrigus: {
+		tierVI : "ru",
 		num: 563,
 		species: "Cofagrigus",
 		types: ["Ghost"],
@@ -9090,6 +9174,7 @@ var pokedex = {
 		eggGroups: ["Flying", "Water 3"],
 	},
 	archeops: {
+		tierVI : "nu",
 		num: 567,
 		species: "Archeops",
 		types: ["Rock", "Flying"],
@@ -9116,6 +9201,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	garbodor: {
+		tierVI : "nu",
 		num: 569,
 		species: "Garbodor",
 		types: ["Poison"],
@@ -9169,6 +9255,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	cinccino: {
+		tierVI : "ru",
 		num: 573,
 		species: "Cinccino",
 		types: ["Normal"],
@@ -9381,6 +9468,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	escavalier: {
+		tierVI : "ru",
 		num: 589,
 		species: "Escavalier",
 		types: ["Bug", "Steel"],
@@ -9432,6 +9520,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	jellicent: {
+		tierVI : "ru",
 		num: 593,
 		species: "Jellicent",
 		types: ["Water", "Ghost"],
@@ -9445,6 +9534,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	alomomola: {
+		tierVI : "ru",
 		num: 594,
 		species: "Alomomola",
 		types: ["Water"],
@@ -9482,6 +9572,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	ferroseed: {
+		tierVI : "nu",
 		num: 597,
 		species: "Ferroseed",
 		types: ["Grass", "Steel"],
@@ -9536,6 +9627,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	klinklang: {
+		tierVI : "nu",
 		num: 601,
 		species: "Klinklang",
 		types: ["Steel"],
@@ -9576,6 +9668,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	eelektross: {
+		tierVI : "ru",
 		num: 604,
 		species: "Eelektross",
 		types: ["Electric"],
@@ -9743,6 +9836,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	accelgor: {
+		tierVI : "ru",
 		num: 617,
 		species: "Accelgor",
 		types: ["Bug"],
@@ -9793,6 +9887,7 @@ var pokedex = {
 		eggGroups: ["Field", "Human-Like"],
 	},
 	druddigon: {
+		tierVI : "ru",
 		num: 621,
 		species: "Druddigon",
 		types: ["Dragon"],
@@ -9817,6 +9912,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	golurk: {
+		tierVI : "nu",
 		num: 623,
 		species: "Golurk",
 		types: ["Ground", "Ghost"],
@@ -9881,6 +9977,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	braviary: {
+		tierVI : "ru",
 		num: 628,
 		species: "Braviary",
 		types: ["Normal", "Flying"],
@@ -10035,6 +10132,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	virizion: {
+		tierVI : "ru",
 		num: 640,
 		species: "Virizion",
 		types: ["Grass", "Fighting"],
@@ -10236,6 +10334,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	meloetta: {
+		tierVI : "ru",
 		num: 648,
 		species: "Meloetta",
 		baseForme: "Aria",
@@ -10250,6 +10349,7 @@ var pokedex = {
 		otherFormes: ["meloettapirouette"],
 	},
 	meloettapirouette: {
+		tierVI : "ru",
 		num: 648,
 		species: "Meloetta-Pirouette",
 		baseSpecies: "Meloetta",
@@ -10409,6 +10509,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	delphox: {
+		tierVI : "ru",
 		num: 655,
 		species: "Delphox",
 		types: ["Fire", "Psychic"],
@@ -10518,6 +10619,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	fletchinder: {
+		tierVI : "ru",
 		num: 662,
 		species: "Fletchinder",
 		types: ["Fire", "Flying"],
@@ -10572,6 +10674,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	vivillon: {
+		tierVI : "nu",
 		num: 666,
 		species: "Vivillon",
 		types: ["Bug", "Flying"],
@@ -10628,6 +10731,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	pyroar: {
+		tierVI : "nu",
 		num: 668,
 		species: "Pyroar",
 		types: ["Fire", "Normal"],
@@ -10881,6 +10985,7 @@ var pokedex = {
 		eggGroups: ["Fairy"],
 	},
 	aromatisse: {
+		tierVI : "ru",
 		num: 683,
 		species: "Aromatisse",
 		types: ["Fairy"],
@@ -10931,6 +11036,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Water 2"],
 	},
 	malamar: {
+		tierVI : "nu",
 		num: 687,
 		species: "Malamar",
 		types: ["Dark", "Psychic"],
@@ -10956,6 +11062,7 @@ var pokedex = {
 		eggGroups: ["Water 3"],
 	},
 	barbaracle: {
+		tierVI : "nu",
 		num: 689,
 		species: "Barbaracle",
 		types: ["Rock", "Water"],
@@ -11006,6 +11113,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Water 3"],
 	},
 	clawitzer: {
+		tierVI : "ru",
 		num: 693,
 		species: "Clawitzer",
 		types: ["Water"],
@@ -11085,6 +11193,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	aurorus: {
+		tierVI : "nu",
 		num: 699,
 		species: "Aurorus",
 		types: ["Rock", "Ice"],
@@ -11465,6 +11574,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	diancie: {
+		tierVI : "ru",
 		num: 719,
 		species: "Diancie",
 		types: ["Rock", "Fairy"],
@@ -11494,6 +11604,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	hoopa: {
+		tierVI : "ru",
 		num: 720,
 		species: "Hoopa",
 		baseForme: "Confined",
