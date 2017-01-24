@@ -1294,7 +1294,7 @@ var pokedex = {
 		evoLevel: 28,
 		eggGroups: ["Human-Like"],
 	},
-	machamp:
+	machamp: {
 		tierVI : "uu",
 		num: 68,
 		species: "Machamp",
@@ -2046,6 +2046,7 @@ var pokedex = {
 		eggGroups: ["Fairy"],
 	},
 	tangela: {
+		banVI : "lc",
 		num: 114,
 		species: "Tangela",
 		types: ["Grass"],
@@ -2180,6 +2181,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	scyther: {
+		banVI : "lc",
 		tierVI : "nu",
 		num: 123,
 		species: "Scyther",
@@ -3222,6 +3224,7 @@ var pokedex = {
 		eggGroups: ["Grass"],
 	},
 	yanma: {
+		banVI : "lc",
 		num: 193,
 		species: "Yanma",
 		types: ["Bug", "Flying"],
@@ -3289,6 +3292,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	murkrow: {
+		banVI : "lc",
 		num: 198,
 		species: "Murkrow",
 		types: ["Dark", "Flying"],
@@ -3315,6 +3319,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Water 1"],
 	},
 	misdreavus: {
+		banVI : "lc",
 		num: 200,
 		species: "Misdreavus",
 		types: ["Ghost"],
@@ -3402,6 +3407,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	gligar: {
+		banVI : "lc",
 		tierVI : "uu",
 		num: 207,
 		species: "Gligar",
@@ -3553,6 +3559,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	sneasel: {
+		banVI : "lc",
 		tierVI : "ru",
 		num: 215,
 		species: "Sneasel",
@@ -4900,6 +4907,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	meditite: {
+		banVI : "lc",
 		num: 307,
 		species: "Meditite",
 		types: ["Fighting", "Psychic"],
@@ -6808,6 +6816,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	drifloon: {
+		banVI : "lc",
 		num: 425,
 		species: "Drifloon",
 		types: ["Ghost", "Flying"],
@@ -10999,6 +11008,7 @@ var pokedex = {
 		eggGroups: ["Fairy"],
 	},
 	swirlix: {
+		banVI : "lc",
 		num: 684,
 		species: "Swirlix",
 		types: ["Fairy"],
@@ -13077,23 +13087,60 @@ var pokedex = {
 
 var pokemonsa = [];
 var speeds = [];
+var ou = [];
+var uu = [];
+var ru = [];
+var nu = [];
+var lc = [];
 for (var key in pokedex) {
-		var pokeName = pokedex[key].species.charAt(0).toUpperCase() + pokedex[key].species.slice(1);
-		var ptemp = {"key":key,"pokeName":pokeName};
-		var stemp = {"key":key,"pokeName":pokeName, "spe":pokedex[key].baseStats.spe}
-		pokemonsa.push(ptemp);
-		speeds.push(stemp);
+	//for each pokedex entry
+	var pokeName = pokedex[key].species.charAt(0).toUpperCase() + pokedex[key].species.slice(1);
+	var ptemp = {"key":key,"pokeName":pokeName};//for the IV calc
+
+	if(pokedex[key].tierVI === "ou"){
+		var temptier = {"key":key,"pokeName":pokeName};
+		ou.push(temptier);
+	}else if(pokedex[key].tierVI === "uu"){
+		var temptier = {"key":key,"pokeName":pokeName};
+		uu.push(temptier);
+	}else if(pokedex[key].tierVI === "ru"){
+		var temptier = {"key":key,"pokeName":pokeName};
+		ru.push(temptier);
+	}else if(pokedex[key].tierVI === "nu"){
+		var temptier = {"key":key,"pokeName":pokeName};
+		nu.push(temptier);
+	}else if(pokedex[key].tierVI === "" || pokedex[key].tierVI == null){
+		if(pokedex[key].prevo == null && pokedex[key].forme != "mega" && pokedex[key].evos != null && pokedex[key].banVI != "lc"){
+			var temptier = {"key":key,"pokeName":pokeName};
+			lc.push(temptier);
+		}
 	}
-	pokemonsa = pokemonsa.sort(function(a,b){
-		return ( (a.pokeName < b.pokeName) ? -1 : ( (a.pokeName == b.pokeName) ? 0 : 1) );
-	});
+
+function nameSort(array){
+	var result = array.sort(function(a,b){
+			return ( (a.pokeName < b.pokeName) ? -1 : ( (a.pokeName == b.pokeName) ? 0 : 1) );
+		});
+		return result;
+}
+
+	var stemp = {"key":key,"pokeName":pokeName, "spe":pokedex[key].baseStats.spe};//for speed tiers
+	pokemonsa.push(ptemp);
+	speeds.push(stemp);
+	}
+	pokemonsa = nameSort(pokemonsa);
 	speeds = speeds.sort(function(a,b){
 		return ( (a.spe < b.spe) ? 1: ( (a.spe == b.spe) ? 0 : -1) );
 	});
-	console.log(speeds[0]);
-	console.log(speeds[1]);
-	console.log(speeds[2]);
-	console.log(speeds[3]);
+	// console.log(speeds[0]);
+	// console.log(speeds[1]);
+	// console.log(speeds[2]);
+	// console.log(speeds[3]);
+	ou = nameSort(ou);
+	uu = nameSort(uu);
+	ru = nameSort(ru);
+	nu = nameSort(nu);
+	lc = nameSort(lc);
+	console.log(lc);
 /*
 tierlists:
 
