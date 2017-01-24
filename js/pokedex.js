@@ -673,6 +673,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	nidoqueen: {
+		tierVI : "uu",
 		num: 31,
 		species: "Nidoqueen",
 		types: ["Poison", "Ground"],
@@ -715,6 +716,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Field"],
 	},
 	nidoking: {
+		tierVI : "uu",
 		num: 34,
 		species: "Nidoking",
 		types: ["Poison", "Ground"],
@@ -1284,7 +1286,8 @@ var pokedex = {
 		evoLevel: 28,
 		eggGroups: ["Human-Like"],
 	},
-	machamp: {
+	machamp:
+		tierVI : "uu",
 		num: 68,
 		species: "Machamp",
 		types: ["Fighting"],
@@ -1350,6 +1353,7 @@ var pokedex = {
 		eggGroups: ["Water 3"],
 	},
 	tentacruel: {
+		tierVI : "uu",
 		num: 73,
 		species: "Tentacruel",
 		types: ["Water", "Poison"],
@@ -2333,6 +2337,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	vaporeon: {
+		tierVI : "uu",
 		num: 134,
 		species: "Vaporeon",
 		types: ["Water"],
@@ -2471,6 +2476,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	snorlax: {
+		tierVI : "uu",
 		num: 143,
 		species: "Snorlax",
 		types: ["Normal"],
@@ -3241,6 +3247,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	umbreon: {
+		tierVI : "uu",
 		num: 197,
 		species: "Umbreon",
 		types: ["Dark"],
@@ -3755,6 +3762,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	porygon2: {
+		tierVI : "uu",
 		num: 233,
 		species: "Porygon2",
 		types: ["Normal"],
@@ -3911,6 +3919,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	suicune: {
+		tierVI : "uu",
 		num: 245,
 		species: "Suicune",
 		types: ["Water"],
@@ -4059,6 +4068,7 @@ var pokedex = {
 		otherFormes: ["sceptilemega"],
 	},
 	sceptilemega: {
+		tierVI : "uu",
 		num: 254,
 		species: "Sceptile-Mega",
 		baseSpecies: "Sceptile",
@@ -4160,6 +4170,7 @@ var pokedex = {
 		eggGroups: ["Monster", "Water 1"],
 	},
 	swampert: {
+		tierVI : "uu",
 		num: 260,
 		species: "Swampert",
 		types: ["Water", "Ground"],
@@ -4175,6 +4186,7 @@ var pokedex = {
 		otherFormes: ["swampertmega"],
 	},
 	swampertmega: {
+		tierVI : "uu",
 		num: 260,
 		species: "Swampert-Mega",
 		baseSpecies: "Swampert",
@@ -5038,6 +5050,7 @@ var pokedex = {
 		otherFormes: ["sharpedomega"],
 	},
 	sharpedomega: {
+		tierVI : "uu",
 		num: 319,
 		species: "Sharpedo-Mega",
 		baseSpecies: "Sharpedo",
@@ -5458,6 +5471,7 @@ var pokedex = {
 		eggGroups: ["Water 1", "Dragon"],
 	},
 	milotic: {
+		tierVI : "uu",
 		num: 350,
 		species: "Milotic",
 		types: ["Water"],
@@ -5888,6 +5902,7 @@ var pokedex = {
 		eggGroups: ["Mineral"],
 	},
 	metagross: {
+		tierVI : "uu",
 		num: 376,
 		species: "Metagross",
 		types: ["Steel", "Psychic"],
@@ -6439,6 +6454,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	roserade: {
+		tierVI : "uu",
 		num: 407,
 		species: "Roserade",
 		types: ["Grass", "Poison"],
@@ -7057,6 +7073,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	lucario: {
+		tierVI : "uu",
 		num: 448,
 		species: "Lucario",
 		types: ["Fighting", "Steel"],
@@ -7150,6 +7167,7 @@ var pokedex = {
 		eggGroups: ["Human-Like"],
 	},
 	toxicroak: {
+		tierVI : "uu",
 		num: 454,
 		species: "Toxicroak",
 		types: ["Poison", "Fighting"],
@@ -7420,6 +7438,7 @@ var pokedex = {
 		eggGroups: ["Bug"],
 	},
 	mamoswine: {
+		tierVI : "uu",
 		num: 473,
 		species: "Mamoswine",
 		types: ["Ice", "Ground"],
@@ -7434,6 +7453,7 @@ var pokedex = {
 		eggGroups: ["Field"],
 	},
 	porygonz: {
+		tierVI : "uu",
 		num: 474,
 		species: "Porygon-Z",
 		types: ["Normal"],
@@ -7531,6 +7551,7 @@ var pokedex = {
 		otherFormes: ["rotomheat", "rotomwash", "rotomfrost", "rotomfan", "rotommow"],
 	},
 	rotomheat: {
+		tierVI : "uu",
 		num: 479,
 		species: "Rotom-Heat",
 		baseSpecies: "Rotom",
@@ -8779,6 +8800,7 @@ var pokedex = {
 		eggGroups: ["Fairy", "Grass"],
 	},
 	whimsicott: {
+		tierVI : "uu",
 		num: 547,
 		species: "Whimsicott",
 		types: ["Grass", "Fairy"],
@@ -9229,6 +9251,7 @@ var pokedex = {
 		eggGroups: ["Amorphous"],
 	},
 	reuniclus: {
+		tierVI : "uu",
 		num: 579,
 		species: "Reuniclus",
 		types: ["Psychic"],
@@ -9756,6 +9779,7 @@ var pokedex = {
 		eggGroups: ["Field", "Human-Like"],
 	},
 	mienshao: {
+		tierVI : "uu",
 		num: 620,
 		species: "Mienshao",
 		types: ["Fighting"],
@@ -9884,6 +9908,7 @@ var pokedex = {
 		eggGroups: ["Flying"],
 	},
 	mandibuzz: {
+		tierVI : "uu",
 		num: 630,
 		species: "Mandibuzz",
 		types: ["Dark", "Flying"],
@@ -10022,6 +10047,7 @@ var pokedex = {
 		eggGroups: ["Undiscovered"],
 	},
 	tornadus: {
+		tierVI : "uu",
 		num: 641,
 		species: "Tornadus",
 		baseForme: "Incarnate",
@@ -11073,6 +11099,7 @@ var pokedex = {
 		eggGroups: ["Monster"],
 	},
 	sylveon: {
+		tierVI : "uu",
 		num: 700,
 		species: "Sylveon",
 		types: ["Fairy"],
