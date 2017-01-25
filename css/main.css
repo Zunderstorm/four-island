@@ -319,6 +319,37 @@ main {
       color: #efefef;
       text-decoration: none; }
 
+#boxWindow .box {
+  background: #efefef;
+  color: #1d2221;
+  width: 20em;
+  margin: 0 auto;
+  border: thick solid #1d2221; }
+  #boxWindow .box th {
+    border-bottom: thick solid #1d2221; }
+  #boxWindow .box tr {
+    padding: 0;
+    margin: 0; }
+    #boxWindow .box tr td {
+      text-align: center;
+      line-height: 3em;
+      width: 3em;
+      height: 3em;
+      margin: 0.1em;
+      box-sizing: border-box;
+      float: left;
+      background: rgba(206, 199, 201, 0.2); }
+      #boxWindow .box tr td a {
+        text-decoration: none;
+        color: inherit; }
+
+#newPokemon {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  border: thick solid #1d2221; }
+
 footer {
   font-size: .5em;
   box-sizing: border-box;

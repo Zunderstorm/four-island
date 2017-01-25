@@ -13,7 +13,10 @@ js/pokedex.js
 js/main.js
 js/iv.js
 js/counter.js
+js/boxes.js
 #HTML-------------------------------
 index.html
 ivcalc.html
 counter.html
+boxes.html
+pokeedit.html
